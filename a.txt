@@ -1,10 +1,6 @@
 <<<<<<< HEAD
-1
-2 k - be first
-=======
 1 kkk- by second
-2
->>>>>>> ada0bcb2ba1e81802c3246638df570bf5e492443
+2 k - be first
 3
 4
 5
