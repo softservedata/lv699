@@ -1,5 +1,6 @@
+<<<<<<< HEAD
 1 kkk- by second
-2
+2 k - be first
 3
 4
 5
