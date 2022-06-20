@@ -2,7 +2,7 @@ package com.softserve.edu;
 
 import java.io.IOException;
 import java.util.Scanner;
-
+import java.lang.String;
 public class MainScan {
     public static void main(String[] args) throws IOException {
         //
