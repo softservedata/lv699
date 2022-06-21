@@ -1,6 +1,6 @@
 package com.softserve.edu;
 
-//import com.softserve.hw01.String;
+//import com.softserve.edu.String;
 //import java.lang.String;
 
 /** This is a sample class which is used to demonstrate the use of multi-line comments.
@@ -61,8 +61,8 @@ public class First {
         System.out.print("\rA\\B\"C");
         //System.out.print("\tABC");
         //
-        //com.softserve.hw01.String s1 = new String();
-        com.softserve.hw01.String s1 = new com.softserve.hw01.String();
+        //com.softserve.edu.String s1 = new String();
+        String s1 = new String();
         s1.m1();
         //
         byte b1 = 49;

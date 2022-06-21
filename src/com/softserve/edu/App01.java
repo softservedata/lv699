@@ -1,4 +1,4 @@
-package com.softserve.hw01;
+package com.softserve.edu;
 
 public class App01 {
 

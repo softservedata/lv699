@@ -1,4 +1,4 @@
-package com.softserve.hw02;
+package com.softserve.hw01;
 import java.util.Scanner;
 
 public class Name_adress {
