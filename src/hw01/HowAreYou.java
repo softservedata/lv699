@@ -9,6 +9,7 @@ public class HowAreYou
         System.out.println("How are you? ");
         String answer = scan.nextLine();
         System.out.println("You are: " + answer);
+
         scan.close();
     }
 }
