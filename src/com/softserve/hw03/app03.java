@@ -3,7 +3,7 @@ package com.softserve.hw03;
 import java.util.Scanner; // загружаємо клас сканер
 
 class app03 {
-	public static void main(String[] args)
+	public static void main(String[]args)
 	{
 
 		System.out.println("Для розрахунку вартості дзвінків необхідно ввести тариф і час розмови");
