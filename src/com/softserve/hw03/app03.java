@@ -3,7 +3,7 @@ package com.softserve.hw03;
 import java.util.Scanner; // загружаємо клас сканер
 
 class app03 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 
 		System.out.println("Для розрахунку вартості дзвінків необхідно ввести тариф і час розмови");
@@ -37,9 +37,9 @@ class app03 {
 		double CostTotal=Cost1+Cost2+Cost3;
 		
 		System.out.println ("Результат:");
-		System.out.println("Вартість розмови в країну с1 склала: " + Cost1 + " грн.");
-		System.out.println("Вартість розмови в країну с2 склала: " + Cost2 + " грн.");
-		System.out.println("Вартість розмови в країну с3 склала: " + Cost3 + " грн.");
+		System.out.println("Вартість розмови в країну с1 складає: " + Cost1 + " грн.");
+		System.out.println("Вартість розмови в країну с2 складає: " + Cost2 + " грн.");
+		System.out.println("Вартість розмови в країну с3 складає: " + Cost3 + " грн.");
 		System.out.println ("Загальні витрати на всі розмови склали "+CostTotal+" грн.");
 		scan.close();
 	}
