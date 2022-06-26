@@ -1,18 +1,17 @@
-package h1;
+package hw1;
 
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
-public class H1 {
+public class hw1 {
 
 	public static void main(String[] args) {
 
 		int radius = 10;
-		System.out.println("Площа кола дорівнює = " +  (Math.PI * Math.pow(radius, 2)) + "  м2");
+		System.out.println("Площа кола дорівнює = " +  +  (Math.PI * Math.pow(radius, 2)) + "  м2");
 		System.out.println("Периметр кола складає = " + (2 * Math.PI * radius) + "  м");
 //
-		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("\nБудь-ласка введіть Ваше імя");
 		String name = scan.nextLine();
@@ -22,10 +21,10 @@ public class H1 {
 //
 		String[] oblast = { "Київ", "Львів", "Житомир" };
 		int[] t = { 5, 10, 15 };
-		int allminutes = Arrays.stream(t).sum(); //	Аналог решения: int allminutes = t[0] + t[1] + t[2];
-		System.out.println("\nЗагальна кількість хвилин в розмовах з містами " + oblast[0] + ", " + oblast[1] + " та "
-				+ oblast[2] + " складає  " + allminutes + " хв.");
+		int allminutes = Arrays.stream(t).sum(); //	Аналогія рішення: int allminutes = t[0] + t[1] + t[2];
 		
+		System.out.println("\nЗагальна кількість хвилин в розмовах з містами " + oblast[0] + ", " + oblast[1] + " та "
+				+ oblast[2] + " складає  " + allminutes + " хв. ");
 
 	}
 
