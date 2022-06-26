@@ -12,6 +12,7 @@ public class H1 {
 		System.out.println("Площа кола дорівнює = " +  (Math.PI * Math.pow(radius, 2)) + "  м2");
 		System.out.println("Периметр кола складає = " + (2 * Math.PI * radius) + "  м");
 //
+		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("\nБудь-ласка введіть Ваше імя");
 		String name = scan.nextLine();
