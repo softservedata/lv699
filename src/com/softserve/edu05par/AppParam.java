@@ -49,6 +49,6 @@ public class AppParam {
         // 4. By Value, Reference Immutable Type
         Integer i = 12; // = new Integer(12);
         app.work(i);
-        System.out.println("done main(...), i = " + i);
+        System.out.println("done main(...), i = " + i.toString()); // i.toString();
     }
 }
