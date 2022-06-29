@@ -28,7 +28,9 @@ boolean result;
 
 
     public Student () {
-     avgRating=avgRating + rating;}
+        name="";
+        rating=-1;
+        avgRating=avgRating + rating;}
 
     public Student (String name, int rating) {
         this.name=name;
@@ -37,10 +39,11 @@ boolean result;
     }
 
   // допрацювати
-   public boolean betterStudent() {
-     return result = rating > avgRating;
+   /*public boolean betterStudent(int rating) {
+       result= rating > avgRating;
+                    return true;
 
-         }
+         }*/
 
 
    // betterStudent - to definite the better student (between two, return true or false)
@@ -53,15 +56,14 @@ boolean result;
 
 public static void main (String[] args) {
         Student student1 = new Student("Dave",85);
-        student1.betterStudent();
+    System.out.println(student1.toString());
+   // System.out.println(student1.betterStudent(85));
         Student student2 = new Student("maria",70);
-        student2.betterStudent();
+    System.out.println(student2.toString());
+   // System.out.println(student2.betterStudent(70));
         Student student3 = new Student("Diana",99);
-        student3.betterStudent();
-
-        System.out.println("student1 = " + student1);
-        System.out.println("student2 = " + student2);
-        System.out.println("student3 = " + student3);
+    System.out.println(student3.toString());
+   // System.out.println(student3.betterStudent(99));
 
         System.out.println("avgRating = " + Student.getAvgRating()/3);
 
