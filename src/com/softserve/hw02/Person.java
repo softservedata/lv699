@@ -30,19 +30,22 @@ public class Person {
     }
 
     public int getAge(int birthYear) {
-        int age=2022-birthYear;
+        System.out.println("getAge method is running...");
+        int age = 2022-birthYear;
         return age;
     }
 
     public void output() {
+        System.out.println("output method is running...");
         System.out.println("FirstName and LastName is " + firstName + " " + lastName + "." + "  He/She is " + (2022-birthYear) + " years old");
             }
 
        public void changeName(String fn, String ln) {
-        lastName=fn;
-        firstName=ln;
-        System.out.print("lastName = " + lastName + "    ");
-       System.out.println("firstName = " + firstName);
+           System.out.print("firstName before changeName= " + firstName + " "+ "lastname before changeName = " + lastName);
+        lastName=ln;
+        firstName=fn;
+        System.out.println("lastName = " + lastName + "    ");
+       System.out.print("firstName = " + firstName);
 
    }
 
@@ -65,22 +68,37 @@ public static void main (String[] args) {
     person1.getAge(2001);
     person1.output();
     System.out.println(person1.getAge(2001));
-    person1.changeName("Olga", "Koval");
-
+    person1.changeName("Iryna", "Koval");
+    System.out.println(person1.firstName);
 
     Person person2 = new Person ("Igor", "Romak");
     person2.setBirthYear(1991);
     person2.getAge(1991);
     person2.output();
     System.out.println(person2.getAge(1991));
-    person2.changeName("Igor", "Romak");
+    person2.changeName("Viktor", "Romak");
 
     Person person3 = new Person ("Anna", "May");
     person3.setBirthYear(1989);
     person3.getAge(1989);
     person3.output();
     System.out.println(person3.getAge(1989));
-    person3.changeName("Anna", "May");
+    person3.changeName("Anna", "August");
+
+    Person person4 = new Person ("Adam", "Wiaw");
+    person3.setBirthYear(1976);
+    person3.getAge(1976);
+    person3.output();
+    System.out.println(person4.getAge(1976));
+    person3.changeName("Arina", "Wiaw");
+
+    Person person5 = new Person ("Oleksandra", "Aga");
+    person5.setBirthYear(1980);
+    person5.getAge(1980);
+    person5.output();
+    System.out.println(person4.getAge(1980));
+    person5.changeName("Oleksandra", "Rina");
+
 }
 
 }
