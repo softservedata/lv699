@@ -18,7 +18,7 @@ public class Employee {
 		this.hours = hours;
 	}
 
-	public Employee(String name, int spped) {
+	public Employee(String name, int rate) {
 		this.name = name;
 		this.rate = rate;
 	}
