@@ -1,4 +1,4 @@
-package com.softserve.hw02;
+package com.softserve.hw03;
 
 public class Student {
     private String name;

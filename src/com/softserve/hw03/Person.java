@@ -1,4 +1,4 @@
-package com.softserve.hw02;
+package com.softserve.hw03;
 
 public class Person {
     private String firstName;
