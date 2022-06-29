@@ -1,7 +1,6 @@
 package com.softserve.edu;
 
 import com.softserve.edu.String;
-import java.lang.String;
 
 /** This is a sample class which is used to demonstrate the use of multi-line comments.
    This comment does not appear in the java documentation
