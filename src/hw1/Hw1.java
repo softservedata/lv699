@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
-public class hw1 {
+public class Hw1 {
 
 	public static void main(String[] args) {
 
