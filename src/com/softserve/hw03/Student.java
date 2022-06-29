@@ -1,5 +1,7 @@
 package com.softserve.hw03;
 
+//Example from the presentation
+
 public class Student {
 
     private String name;
