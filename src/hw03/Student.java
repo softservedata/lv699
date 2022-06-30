@@ -7,6 +7,7 @@ public class Student {
     public static int totalRating;
 
     public static void main(String[] args) {
+
         Student student01 = new Student();
         student01.setName("Tom");
         student01.setRating(4);

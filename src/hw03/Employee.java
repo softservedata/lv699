@@ -26,10 +26,12 @@ public class Employee {
         rate = 4;
         hours = 8;
     }
+
     public Employee(String name, int rate) {
         this.name = name;
         this.rate = rate;
     }
+
     public Employee(String name, int rate, int hours) {
         this.name = name;
         this.rate = rate;

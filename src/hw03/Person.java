@@ -11,6 +11,7 @@ public class Person {
     Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
+
         Person person0 = new Person();
         Person person1 = new Person();
         Person person2 = new Person();
