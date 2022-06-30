@@ -1,4 +1,5 @@
 package com.softserve.hw03;
+import java.util.Scanner;
 
 public class Person {
     private String firstName;
@@ -30,74 +31,76 @@ public class Person {
     }
 
     public int getAge(int birthYear) {
-        System.out.println("getAge method is running...");
         int age = 2022-birthYear;
         return age;
     }
 
-    public void output() {
-        System.out.println("output method is running...");
-        System.out.println("FirstName and LastName is " + firstName + " " + lastName + "." + "  He/She is " + (2022-birthYear) + " years old");
+    public void output(Person a) {
+        System.out.println("FirstName and LastName is " + firstName + " " + lastName + "." + "  He/She is " + a.getAge(birthYear) + " years old");
             }
+        public void input() {
+        Scanner inputscan = new Scanner(System.in);
+        System.out.print("Please input tha data in such order: firstName; lastName; birthYeasr: ");
+        firstName=inputscan.nextLine();
+        lastName = inputscan.nextLine();
+        birthYear = inputscan.nextInt();
+        }
 
        public void changeName(String fn, String ln) {
-           System.out.print("firstName before changeName= " + firstName + " "+ "lastname before changeName = " + lastName);
+           System.out.println("firstName before changingName = " + firstName + ". "+ "Lastname before changingName = " + lastName + ".");
         lastName=ln;
         firstName=fn;
-        System.out.println("lastName = " + lastName + "    ");
-       System.out.print("firstName = " + firstName);
+        System.out.println( " firstname AFTER Changing = " + firstName + "."+ "lastName AFTER Changing = " + lastName + ".   ");
+
 
    }
 
-   /* Create Console Application project in Java.
-    Add class Person to the project.
-    Class Person should consist of
-    three private fields: firstName, lastName and birthYear (the birthday year)
-    properties for access to these fields
-    default constructor and constructor with 2 parameters (first and last names)
-    methods:
-    getAge() - to calculate the age of person
-    input() - to input information about person
-    output() - to output information about person
-    changeName(String fn, String ln) - to change the first name or/and last name of person
 
-    In the method main() create 5 objects of Person type and input information about them.*/
 public static void main (String[] args) {
     Person person1 = new Person ("Olga", "Koval");
-    person1.setBirthYear(2001);
-    person1.getAge(2001);
-    person1.output();
-    System.out.println(person1.getAge(2001));
-    person1.changeName("Iryna", "Koval");
-    System.out.println(person1.firstName);
-
-    Person person2 = new Person ("Igor", "Romak");
-    person2.setBirthYear(1991);
-    person2.getAge(1991);
-    person2.output();
-    System.out.println(person2.getAge(1991));
-    person2.changeName("Viktor", "Romak");
-
+    Person person2 = new Person ();
     Person person3 = new Person ("Anna", "May");
-    person3.setBirthYear(1989);
-    person3.getAge(1989);
-    person3.output();
-    System.out.println(person3.getAge(1989));
-    person3.changeName("Anna", "August");
-
     Person person4 = new Person ("Adam", "Wiaw");
-    person3.setBirthYear(1976);
-    person3.getAge(1976);
-    person3.output();
-    System.out.println(person4.getAge(1976));
-    person3.changeName("Arina", "Wiaw");
-
     Person person5 = new Person ("Oleksandra", "Aga");
+    System.out.println("I create 5 objects");
+    System.out.println("");
+    // Input st2 alla data and birthyear to other students
+
+    person1.setBirthYear(2001);
+    person2.input();
+    person3.setBirthYear(1989);
+    person4.setBirthYear(1976);
     person5.setBirthYear(1980);
+    System.out.println("I input information about 5 objects");
+    System.out.println("");
+
+    //method get Age
+    person1.getAge(2001);
+    person2.getAge(1991);
+    person3.getAge(1989);
+    person4.getAge(1976);
     person5.getAge(1980);
-    person5.output();
-    System.out.println(person4.getAge(1980));
+    System.out.println("Method getAge was running");
+    System.out.println("");
+
+
+    person1.output(person1);
+    person2.output(person1);
+    person3.output(person1);
+    person4.output(person1);
+    person5.output(person1);
+    System.out.println("Method output was running");
+    System.out.println("");
+
+
+    person1.changeName("Iryna", "Koval");
+    person2.changeName("Viktor", "Romak");
+    person3.changeName("Anna", "August");
+    person4.changeName("Arina", "Wiaw");
     person5.changeName("Oleksandra", "Rina");
+    System.out.println("I changed the names");
+
+
 
 }
 
