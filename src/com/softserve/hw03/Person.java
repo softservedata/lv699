@@ -18,11 +18,6 @@ public class Person {
         this.firstname = firstname;
         this.lastname = lastname;
     }
-    public Person(String firstname, String lastname, int birthYear) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.birthYear = birthYear;
-    }
 
 
     public String getFirstname() {
@@ -57,7 +52,7 @@ public class Person {
             return Age;
         }
 
-        public void input(String firstName,String lastName, int birthYear){
+        public void input(String firstname,String lastname, int birthYear){
             setFirstname(firstname);
             setLastname(lastname);
             setbirthYear(birthYear);
@@ -70,9 +65,9 @@ public class Person {
     }
     public String output() {
         return "Person{" +
-                "firstname='" + getLastname() + '\'' +
-                ", lastname='" + getLastname() + '\'' +
-                ", birthYear='" + getBirthYear() + '\'' +
+                "firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", birthYear='" + birthYear + '\'' +
                 '}';
     }
 
