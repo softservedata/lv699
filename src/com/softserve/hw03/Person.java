@@ -1,11 +1,15 @@
 package com.softserve.hw03;
 
+import java.util.Objects;
+import java.util.Scanner;
+
 public class Person {
     private String firstname;
     private String lastname;
     private int birthYear;
     private int Year = 2022;
     private static  int Age=0;
+    Scanner scan = new Scanner(System.in);
 
     public Person() {
         firstname = "";
@@ -42,7 +46,7 @@ public class Person {
     public void  setbirthYear(int birthYear) {
         this.birthYear = birthYear;
     }
-        //-------------------
+
 
 
 
@@ -52,15 +56,20 @@ public class Person {
             return Age;
         }
 
-        public void input(String firstname,String lastname, int birthYear){
-            setFirstname(firstname);
-            setLastname(lastname);
-            setbirthYear(birthYear);
+        public void input(){
+            System.out.println("Enter Firstname: ");
+            setFirstname(scan.nextLine());
+            System.out.println("Enter Lastname: ");
+            setLastname(scan.nextLine());
+            System.out.println("Enter BirthYear: ");
+            setbirthYear(scan.nextInt());
 
         }
-    public void changeName(String fn,String ln){
-        setFirstname(fn);
-        setLastname(ln);
+    public void changeName(){
+        System.out.println("Enter Firstname: ");
+        setFirstname(scan.nextLine());
+        System.out.println("Enter Lastname: ");
+        setLastname(scan.nextLine());
 
     }
     public String output() {

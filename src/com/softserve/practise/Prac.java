@@ -1,4 +1,4 @@
-package com.softserve.hw03;
+package com.softserve.practise;
 
 public class Prac {
 
