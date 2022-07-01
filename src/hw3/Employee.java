@@ -2,35 +2,42 @@ package hw3;
 
 public class Employee {
 	
+	private static double totalSum = 0;
+	private final double BONUS = 0.1;	
 	private String name;
 	private int rate;
 	private int hours;
-	static int totalSum;
 	private int bonuses;
 	private int salary;
+	private int changeRate;
+
 	
-	public Employee() {
-	}
+	
 		
+		public Employee(String name, int rate, int hours, int bonuses) {
+		name = "";
+		rate = 0;
+		hours = 0;
+		salary = 0;
+	}
 		public Employee(String name, int rate, int hours) {
 		this.name = name;
 		this.rate = rate;
 		this.hours = hours;
 	}
-
 	public Employee(String name, int rate) {
 		this.name = name;
 		this.rate = rate;
 	}
-// Метод для отримання вартості оплати праці (Rate)	
+	
 	int getRate() {
 		return rate;
 	}
 	
-	void setRate(int rate) {
+		void setRate(int rate) {
 		this.rate = rate;
 	}
-// метод для отримання Hours
+		
 	public int getHours() {
 		return hours;
 	}
@@ -38,25 +45,48 @@ public class Employee {
 	public void setHours(int hours) {
 		this.hours = hours;
 	}
-// Метод для розрахунку Salary
+
 	int getSalary() {
-		int salary = rate * hours;
+		int salary = getRate() * getHours();
+		totalSum = totalSum + salary;
 		return salary ;
 	}
-
+	
+	public void changeRate(int rate) {
+		if (salary>0) {
+			totalSum = totalSum - salary;
+			salary = 0;
+		}
+		setRate(rate);
+	}
 
 	@Override
 	public String toString() {
 		return "Employee [name=" + name + ", rate=" + rate + ", hours=" + hours + "]";
 	}
 	
-	public void changeRate(int rate) {
+	
+	
+
+
+	
+	double getBonuses() {
+		return getSalary() * BONUS;
+	}
+
+	int getChangeRate() {
 		
+		
+		return changeRate;
+	}
+
+	void setChangeRate(int rate) {
+		this.changeRate = changeRate;
+	}
+	public static double getTotalSum() {
+		return totalSum;
 	}
 	
-	int getBonuses() {
-		return bonuses;
-	}
 	
 
 }
