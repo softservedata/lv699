@@ -114,7 +114,7 @@ public class ApplCondition {
         System.out.println("Variable 'a' = " + a);
         System.out.println("Variable 'b' = " + b);
         */
-        // /*-
+        /*-
         int a = 67, b = 24;
         //f (a > 50 || (b = 72) < 50) {
         //if (a > 500 || (b = 72) < 50) {
@@ -123,7 +123,7 @@ public class ApplCondition {
         }
         System.out.println("Variable 'a' = " + a);
         System.out.println("Variable 'b' = " + b);
-        // */
+        */
         /*-
         int temperature = 1;
         if (temperature < 10) {
@@ -139,26 +139,35 @@ public class ApplCondition {
         /*-
         boolean isLeap;
         //int year = 1900;
-        int year = 2000;
+        //int year = 2000;
+        int year = 2024;
         if (year % 4 != 0) {
             isLeap = false;
-        } else if (year % 100 != 0) {
-            isLeap = true;
-        } else if (year % 400 == 0) {
-            isLeap = true;
         } else {
-            isLeap = false;
+            if (year % 100 != 0) {
+                isLeap = true;
+            } else {
+                if (year % 400 == 0) {
+                    isLeap = true;
+                } else {
+                    isLeap = false;
+                }
+            }
         }
         System.out.println("isLeap = " + isLeap);
         */
-        /*-
+        // /*-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Do you enjoy Java? (yes/no/maybe): ");
         String input = br.readLine();
         //
         switch (input.toLowerCase()) {
+//        default:
+//            System.out.println("Wrong!");
         case "yes":
         	System.out.println("Ok!");
+//        default:
+//            System.out.println("Wrong!");
         case "maybe":
         	System.out.println("Great!");
         	break;
@@ -180,6 +189,6 @@ public class ApplCondition {
         } else {
         	System.out.println("Wrong! 2");
         }
-        */
+        // */
     }
 }

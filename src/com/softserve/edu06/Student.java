@@ -1,6 +1,8 @@
 package com.softserve.edu06;
 
-public class Student {
+import java.util.Objects;
+
+public class Student { // extends Object {
     private static int count; //  = 0;
     private int id;
     private String name;
@@ -40,6 +42,19 @@ public class Student {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return getId() == student.getId() && Objects.equals(getName(), student.getName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getName());
     }
 
     @Override
