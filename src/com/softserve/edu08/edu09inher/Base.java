@@ -1,4 +1,4 @@
-package com.softserve.edu09inher;
+package com.softserve.edu08.edu09inher;
 
 public abstract class Base {
 

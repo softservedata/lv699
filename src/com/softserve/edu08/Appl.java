@@ -91,7 +91,7 @@ public class Appl {
         System.out.println("\n6. simple for(;;,);");
         for (int j = 0; j < monthDays.length; System.out.print(monthDays[j] + "  "), j++);
         */
-        // /*-
+        /*-
         int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         System.out.println("\n7. for (... ; ; ...)");
         for (int j = 0;; j++) {
@@ -120,8 +120,8 @@ public class Appl {
             k++;
         }
         //
-        // */
-        /*-
+        */
+        // /*-
         System.out.println("\n9. irregular0");
         int[][] irregular0;
         irregular0 = new int[4][];
@@ -152,6 +152,6 @@ public class Appl {
             }
             System.out.println();
         }
-        */
+        // */
     }
 }
