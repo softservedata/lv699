@@ -1,7 +1,7 @@
-package com.softserve.edu09.serv;
+package com.softserve.edu.edu09.serv;
 
-import com.softserve.edu09.dao.In;
-import com.softserve.edu09.dao.Out;
+import com.softserve.edu.edu09.dao.In;
+import com.softserve.edu.edu09.dao.Out;
 
 public class BusLogic {
     private Calc calc;

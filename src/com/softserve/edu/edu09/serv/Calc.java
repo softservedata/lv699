@@ -1,4 +1,4 @@
-package com.softserve.edu09.serv;
+package com.softserve.edu.edu09.serv;
 
 public class Calc {
 

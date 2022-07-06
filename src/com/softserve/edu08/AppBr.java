@@ -17,8 +17,8 @@ public class AppBr {
 			System.out.print("Input number: ");
 			n = Integer.parseInt(sc.nextLine());
 			if (n < 0) {
-				break;
-				//continue;
+				//break;
+				continue;
 			}
 			arr[i] = n;
 		}

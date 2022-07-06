@@ -1,10 +1,22 @@
 package com.softserve.edu08;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Appl {
 
     public static void main(String[] args) {
+        /*
+        int age = -1;
+        Scanner sc = new Scanner(System.in);
+        do {
+            System.out.print("age = ");
+            age = sc.nextInt();
+        } while ((age < 1) || (age > 120));
+        System.out.println("Hello, You are " + age);
+        sc.close();
+        */
+        //
         /*-
         int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         int monthDays2[] = new int[] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
@@ -46,7 +58,7 @@ public class Appl {
         }
         */
         /*-
-        int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+        int monthDays[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         System.out.println("\n0. for (int i=0; ...)");
         // for (int i = 0; i < monthDays.length; i = i + 2) {
         for (int i = 0; i < monthDays.length; i++) {
@@ -56,10 +68,13 @@ public class Appl {
         }
         //
         System.out.println("\n1. for (int i=0; ...)");
+        int i2 = 0;
         for (int i = 0; i < monthDays.length; i++) {
             System.out.print(monthDays[i] + "  ");
+            i2 = i;
         }
         // System.out.println("i = " + i); // Error
+        System.out.println("\ni2 = " + i2);
         //
         System.out.println("\n2. for each");
         for (int element : monthDays) {
@@ -82,19 +97,19 @@ public class Appl {
         //
         int m = 0;
         System.out.println("\n5. for (; ... ;)");
-        for (; m < monthDays.length;) {
+        for (; m < monthDays.length; ) {
             System.out.print(monthDays[m] + "  ");
             m++;
         }
         System.out.println("\nm = " + m);
         //
         System.out.println("\n6. simple for(;;,);");
-        for (int j = 0; j < monthDays.length; System.out.print(monthDays[j] + "  "), j++);
+        for (int j = 0; j < monthDays.length; System.out.print(monthDays[j] + "  "), j++) ;
         */
-        /*-
-        int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+        // /*-
+        int monthDays[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         System.out.println("\n7. for (... ; ; ...)");
-        for (int j = 0;; j++) {
+        for (int j = 0; ; j++) {
             if (j >= monthDays.length / 2) {
                 break;
             }
@@ -112,16 +127,19 @@ public class Appl {
         //
         System.out.println("\n8a. for (;;)");
         int k = 0;
-        for (;;) {
-            if (k >= monthDays.length ) {
+        for (; ; ) {
+            if (k >= monthDays.length) {
                 break;
             }
             System.out.print(monthDays[k] + "  ");
             k++;
         }
         //
-        */
-        // /*-
+        System.out.println("\n8b. for (;;)");
+        for (int i = 0; i < monthDays.length; System.out.print(monthDays[i] + "  "), i++) ;
+        //
+        // */
+        /*-
         System.out.println("\n9. irregular0");
         int[][] irregular0;
         irregular0 = new int[4][];
@@ -152,6 +170,6 @@ public class Appl {
             }
             System.out.println();
         }
-        // */
+        */
     }
 }
