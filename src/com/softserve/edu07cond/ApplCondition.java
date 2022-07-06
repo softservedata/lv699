@@ -27,13 +27,13 @@ public class ApplCondition {
         System.out.println("s=" + s);
         */
         //
-        /*-
+/*-
         int x = 1;
         int y = 0;
-        //double result = x / y;     // Runtime Exception
+      //  double result = x / y;     // Runtime Exception
         double result = 1.0 * x / y; // result = Infinity
         System.out.println("result = " + result);
-        */
+*/
         //
         /*-
         int x = 11;
@@ -51,7 +51,7 @@ public class ApplCondition {
         System.out.println("r = " + r);
         */
         //
-        /*-
+
         int x = 5;
         int a, b;
         a = x++; // a = 5 x = 6
@@ -68,7 +68,7 @@ public class ApplCondition {
         x = 5;
         a = x++ + ++x; // 5 (x=6) + (x=7) 7 = 12
         System.out.println("a = " + a + "   x = " + x);
-        */
+
         //
         /*-
         boolean bool = true;
@@ -115,14 +115,14 @@ public class ApplCondition {
         System.out.println("Variable 'b' = " + b);
         */
         /*-
-        int a = 67, b = 24;
+      //  int a = 67, b = 24;
         //f (a > 50 || (b = 72) < 50) {
         //if (a > 500 || (b = 72) < 50) {
-        if (a > 5 | (b = 72) < 50) {
-            System.out.println("\tDo something...");
-        }
-        System.out.println("Variable 'a' = " + a);
-        System.out.println("Variable 'b' = " + b);
+       // if (a > 5 | (b = 72) < 50) {
+     //       System.out.println("\tDo something...");
+      //  }
+     //   System.out.println("Variable 'a' = " + a);
+     //   System.out.println("Variable 'b' = " + b);
         */
         /*-
         int temperature = 1;
