@@ -80,7 +80,6 @@ public class Employee {
            totalSum = totalSum - salary;
            salary=0;
        }
-       getSalary();
        setRate(rate);
     }
     public double getBonus() {

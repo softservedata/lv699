@@ -1,19 +1,21 @@
 package com.softserve.hw03;
 
 public class Person {
+    private final int year=2022;
     private String firstName;
     private String lastName;
     private int birthYear;
 
     public Person() {
-        firstName = "";
-        lastName =  "";
+        firstName = " ";
+        lastName = " ";
         birthYear = 0;
     }
 
-    public Person(String firstName, String lastName) {
+    public Person(String firstName, String lastName,int birthYear ) {
         this.firstName = firstName;
         this.lastName = lastName;
+       this.birthYear = birthYear;
     }
 
     public String getFirstName() {
@@ -39,4 +41,25 @@ public class Person {
     public void setBirthYear(int birthYear) {
         this.birthYear = birthYear;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName= " + firstName +
+                "lastName= " + lastName +
+                "birthYear=" + birthYear +
+                '}';
+    }
+
+    //.............................methods
+    public int getAge() {
+        return  year - getBirthYear();
+
+    }
+    public  void changeName(String fn, String ln){
+        setFirstName(fn);
+        setLastName(ln);
+
+    }
+
 }

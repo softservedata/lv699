@@ -2,30 +2,46 @@ package com.softserve.hw03;
 
 public class Student {
     private String name;
-    private double rating;
+    int rating;
+    private static int number = 0;
+    private static int sum = 0;
 
     public Student() {
-        this.name = "";
-        this.rating = 0;
+        number++;
     }
-    public Student(String name, double rating) {
+
+    public Student(String name) {
         this.name = name;
-        this.rating = rating;
+        number++;
     }
 
     public String getName() {
         return name;
     }
 
-    public double getRating() {
-        return rating;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setRating(double rating) {
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
         this.rating = rating;
+        sum += rating;
+    }
+
+    public static double getAvgRating() {
+        return (double) sum / number;
+    }
+
+    public boolean betterStudent(Student student) {
+        return this.getRating() > student.getRating();
+    }
+
+    @Override
+    public String toString() {
+        return "Student [name=" + name + ", rating=" + rating + "]";
     }
 }
