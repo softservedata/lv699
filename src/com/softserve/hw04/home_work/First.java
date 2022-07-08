@@ -9,7 +9,7 @@ public class First {
         System.out.println("Enter your numbers:");
         Range range = new Range(sc.nextFloat(), sc.nextFloat(),sc.nextFloat());
         System.out.println("Your numbers: "+range.toString());
-
+sc.close();
         System.out.println("Numbers are belong range [-5,5]:"+ range.belong());
     }
 }
