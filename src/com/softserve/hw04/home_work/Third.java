@@ -13,6 +13,7 @@ public class Third {
         HTTPError error;
         System.out.println("Enter your error: ");
         int number = sc.nextInt();
+        sc.close();
         switch (number) {
             case 400:
                 error = HTTPError.ERROR400;
