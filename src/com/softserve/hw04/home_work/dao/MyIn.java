@@ -1,4 +1,4 @@
-package com.softserve.edu.edu09.dao;
+package com.softserve.hw04.home_work.dao;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -10,11 +10,11 @@ public class MyIn implements In {
         sc = new Scanner(System.in);
     }
 
-    public int readInt(String... msg) {
-        if (msg != null) {
-            System.out.print(Arrays.toString(msg) + ": ");
+    public float readFloat(float arg0) {
+        if (arg0 != 0.0f) {
+            System.out.print(arg0 + ": ");
         }
-        return sc.nextInt();
+        return sc.nextFloat();
     }
 
     public void close() {

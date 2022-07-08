@@ -1,4 +1,4 @@
-package com.softserve.hw04;
+package com.softserve.hw04.practical_tasks;
 
 public class Numbers {
 
