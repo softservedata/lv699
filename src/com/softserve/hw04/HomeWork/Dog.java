@@ -11,16 +11,13 @@ public class Dog {
     public static void main(String[] args) {
         //  Create 3 instances of type Dog.
         Dog dog1 = new Dog("Cezar", Breed.BOXER, 7);
-        Dog dog2 = new Dog("Molly", Breed.CHIHUAHUA, 2);
+        Dog dog2 = new Dog("Molly", Breed.CHIHUAHUA, 12);
         Dog dog3 = new Dog("Alph", Breed.ROTTWEILER, 5);
 
         Dog checktask = new Dog();
 
        String sameName1 = checktask.sameName(dog1, dog2, dog3);
-       //if (sameName1 = "") {
-                //    System.out.println("nobody have the same name");
-              //  } else System.out.println(sameName);
-               checktask.oldestDog(dog1, dog2, dog3);
+       System.out.println(checktask.oldestDog(dog1, dog2, dog3));
 
 
     }
@@ -51,25 +48,28 @@ public class Dog {
     }
 
     //  Display the name and the kind of the oldest dog.
-        public void oldestDog(Dog dog1, Dog dog2, Dog dog3) {
+        String result = "";
+    public String oldestDog(Dog dog1, Dog dog2, Dog dog3) {
           String  oldestDogName = "";
           Breed  oldestDogBreed = null;
           int a = 0;
         if (dog1.getAge() >= a) {
             oldestDogName = dog1.getName();
             oldestDogBreed = dog1.getBreed();
+            a=dog1.getAge();
 
-        } else         if (dog2.getAge() >= a) {
+        } if (dog2.getAge() >= a) {
             oldestDogName = dog2.getName();
             oldestDogBreed = dog2.getBreed();
+            a=dog2.getAge();
 
-            } else     if (dog3.getAge() >= a) {
+            } if (dog3.getAge() >= a) {
             oldestDogName = dog3.getName();
             oldestDogBreed = dog3.getBreed();
+            a = dog3.getAge();
 
             }
-            System.out.println("oldestDog() if running...");
-        System.out.println("The Oldest Dog is: "+   oldestDogName + ". " + oldestDogBreed);
+            return result = ("The Oldest Dog is: " + oldestDogName + ". " + oldestDogBreed);
 
         }
 

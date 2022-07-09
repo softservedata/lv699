@@ -16,7 +16,7 @@ private String name;
 
     @Override
     public String toString() {
-        return "Breed: " + name + ". ";
+        return "Breed: " + name + ".";
     }
 
     public String getName() {
