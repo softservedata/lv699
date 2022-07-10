@@ -1,4 +1,4 @@
-package com.softserve.hw05.practicalTask;
+package com.softserve.hw05;
 
 import java.util.Scanner;
 
