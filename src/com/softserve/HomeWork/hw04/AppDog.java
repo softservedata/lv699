@@ -13,8 +13,6 @@ public class AppDog {
         System.out.println(dog2);
         System.out.println(dog3);
 
-        //System.out.println(dog1 == dog2);
-        //System.out.println(dog1.equals(dog2));
         if (dog1.equals(dog2)) {
             System.out.println("name dog1 and name dog2 are the same:" + dog1.getName());
         } else if (dog1.equals(dog3)) {
