@@ -1,4 +1,4 @@
-package com.softserve.hw03;
+package com.softserve.HomeWork.hw03;
 
 public class Employee {
     private final double BONUS = 0.1;

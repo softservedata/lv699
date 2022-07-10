@@ -1,4 +1,4 @@
-package com.softserve.hw01;
+package com.softserve.HomeWork.hw01;
 
 import java.util.Scanner; // імпорт сканера
 

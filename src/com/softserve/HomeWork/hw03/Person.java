@@ -1,4 +1,4 @@
-package com.softserve.hw03;
+package com.softserve.HomeWork.hw03;
 
 public class Person {
     private final int year=2022;
