@@ -11,18 +11,17 @@ public class NumberMinMax {
 		System.out.println("Maximal number is " + dif1.maxi(400, 70000, 2500000));
 
 	}
-	
-	private int num1 = 1;
-	private int num2 = 2;
-	private int num3 = 3;
-	
+
+	private int num1;
+	private int num2;
+	private int num3;
 
 	public NumberMinMax() {
-		}
-	
+	}
+
 	int minimal;
 	int maximal;
-	
+
 	public int mini(int num1, int num2, int num3) {
 		if (num1 < num2) {
 			minimal = num1;
@@ -55,7 +54,5 @@ public class NumberMinMax {
 			}
 		}
 		return maximal;
-
 	}
-}	
-
+}
