@@ -1,7 +1,5 @@
 package com.softserve.HomeWork.hw04;
 
-import java.util.Objects;
-
 public class AppDog {
     public static void main(String[] args) {
 
