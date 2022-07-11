@@ -5,6 +5,7 @@ public class B extends A {
 
     public B() {
         // super();
+        //j = 1; // Compile Error
         //super(1);
         System.out.println("constructor B()");
     }
@@ -26,5 +27,5 @@ public class B extends A {
     public static void m() {
         System.out.println("\tstatic m() from B");
     }
-    
+
 }
