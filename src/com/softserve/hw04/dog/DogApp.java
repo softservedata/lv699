@@ -2,9 +2,9 @@ package com.softserve.hw04.dog;
 
 public class DogApp {
     public static void main(String[] args) {
-        Dog dog1 = new Dog("Ellie", 2, Dog.Breed.BULLDOG);
-        Dog dog2 = new Dog("Betty", 4, Dog.Breed.CORGI);
-        Dog dog3 = new Dog("Polly", 10, Dog.Breed.MALTIPU);
+        Dog dog1 = new Dog("Ellie", 2, Breed.BULLDOG);
+        Dog dog2 = new Dog("Betty", 4, Breed.CORGI);
+        Dog dog3 = new Dog("Polly", 10, Breed.MALTIPU);
 
     // check for the same names
         if(dog1.equals(dog2)){

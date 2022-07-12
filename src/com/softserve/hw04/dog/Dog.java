@@ -5,20 +5,6 @@ import java.util.Objects;
 public class Dog {
     private String name;
     private int age;
-    public enum Breed{
-        CORGI ("Corgi"),
-        BULLDOG ("Bulldog"),
-        MALTIPU ("Maltipu");
-
-        private final String breedName;
-
-        Breed(String breedName){
-            this.breedName = breedName;
-        }
-        public String getBreedName() {
-            return breedName;
-        }
-    }
     private Breed breed;
 
     public Dog(String name, int age, Breed breed) {
