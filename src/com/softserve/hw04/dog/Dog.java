@@ -49,6 +49,12 @@ public class Dog {
     public int hashCode() {
         return Objects.hash(name, age);
     }
-    //--------------------------------------------------------
 
+    @Override
+    public String toString() {
+        return "Dog " +
+                "name = " + name +
+                ", age = " + age +
+                ", breed = " + breed;
+    }
 }
