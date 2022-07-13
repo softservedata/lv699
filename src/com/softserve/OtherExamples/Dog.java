@@ -1,4 +1,4 @@
-package com.softserve.MyExample;
+package com.softserve.OtherExamples;
 
 import java.util.Objects;
 

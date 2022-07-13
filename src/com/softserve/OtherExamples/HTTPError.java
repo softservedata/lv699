@@ -1,4 +1,4 @@
-package com.softserve.MyExample;
+package com.softserve.OtherExamples;
 
 public enum HTTPError {
      ERROR400("400", "Bad Request"),

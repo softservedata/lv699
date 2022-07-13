@@ -1,4 +1,4 @@
-package com.softserve.MyExample;
+package com.softserve.OtherExamples;
 
 public class Dogs {
     public static void main(String[] args) {

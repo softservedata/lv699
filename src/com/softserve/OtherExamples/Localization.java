@@ -1,4 +1,4 @@
-package com.softserve.MyExample;
+package com.softserve.OtherExamples;
 
 public enum Localization {
     EN("англійська", "English"), UA("українська", "Ukrainian");

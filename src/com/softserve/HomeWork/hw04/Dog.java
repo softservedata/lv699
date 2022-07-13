@@ -6,7 +6,7 @@ public class Dog {
     private String name;
     private Breed breed;
     private int age;
-    private static int temp = 0;
+    private static int count = 0;
     private static String nameoldest;
 
     public Dog() {
@@ -72,8 +72,8 @@ public class Dog {
     }
 
     public String oldest(){
-        if (getAge() > temp) {
-            temp  = getAge();
+        if (getAge() > count) {
+            count  = getAge();
             nameoldest = name;
         }
 
