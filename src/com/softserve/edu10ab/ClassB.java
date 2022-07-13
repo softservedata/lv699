@@ -33,5 +33,6 @@ public class ClassB extends ClassA {
 
 	public void m8() {
 		System.out.println("ClassB, metod m8");
+		super.m8();
 	}
 }

@@ -26,14 +26,14 @@ public class Appl { // implements Serializable
 		// /*-
 		System.out.println("Test ClassB.");
 		ClassA b; // = null;
-		// System.out.println("b.i = " + b.i); // error not init
+		//System.out.println("b.i = " + b.i); // error not init
 		b = new ClassB(); // 1. Polymor.
 		System.out.println("b.i = " + b.i); // from A, fields not virtual; Architecture Error; Fields must be private
 		b.m1(); // 2. Polymor.
 		b.m2();
 		b.m3(); // 3. Polymor. non static methods are virtual!
 		b.m4(); // 2. Polymor.
-		// b.m5(); // Compile ERROR
+		//b.m5(); // Compile ERROR
 		// ((ClassB) b).m5(); // Code Smell
         if (b instanceof ClassB) {
         	((ClassB) b).m5(); // No Runtime Error
