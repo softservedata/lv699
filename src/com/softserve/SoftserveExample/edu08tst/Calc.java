@@ -1,13 +1,14 @@
-package com.softserve.SoftserveExample.edu08tst;
-
+package com.softserve.edu08tst;
 
 public class Calc {
-    public int add(int a, int b) {
-        return a + b;
+
+    public double add(double arg0, double arg1) {
+        //return arg0 + arg0;
+        return arg0 + arg1;
     }
 
-    public int div(int a, int b){
-        return a / b;
+    //public double div(int arg0, int arg1) {
+    public double div(double arg0, double arg1) {
+        return arg0 / arg1;
     }
 }
-
