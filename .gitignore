@@ -129,5 +129,6 @@ workspace.xml
 # npm
 /node_modules/
 /**/node_modules/
-
-/**/OtherExamples/
+##################
+# IGNORE MY FOLDERS 
+**/OtherExamples
