@@ -47,7 +47,6 @@ hs_err_pid*
 /build/
 /doc/
 #/lib/
-/OtherExamples/
 /test-output/
 /allure-results/
 /.classpath
@@ -130,3 +129,5 @@ workspace.xml
 # npm
 /node_modules/
 /**/node_modules/
+
+/**/OtherExamples/
