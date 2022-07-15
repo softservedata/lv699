@@ -1,4 +1,4 @@
-package com.softserve.PracticalTask.pt4;
+package com.softserve.PracticalTask.pt04;
 
 public class AppEvenNumbers {
     public static  void  main (String [] args){
