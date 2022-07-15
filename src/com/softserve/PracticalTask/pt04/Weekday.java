@@ -6,14 +6,14 @@ import java.util.Scanner;
 
 
         public static void main(String[] args) {
-            int answerDay;
+            int whatDay;
             Weekday.NumberDay numberDay;
 
-            Scanner scan = new Scanner(System.in);
+           Scanner scan = new Scanner(System.in);
             System.out.print("Enter the number of the day of the week: ");
-            answerDay = scan.nextInt();
+            whatDay = scan.nextInt();
 
-            switch (answerDay) {
+            switch (whatDay) {
                 case 1:
                     numberDay = Weekday.NumberDay.day1;
                     System.out.print(numberDay);
@@ -81,7 +81,8 @@ import java.util.Scanner;
             public String toString() {
                 return getUa() + "\n" + getEn() + "\n" + getDe();
             }
+
+            }
         }
-    }
 
 
