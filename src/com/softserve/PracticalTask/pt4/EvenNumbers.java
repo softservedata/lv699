@@ -1,4 +1,4 @@
-package com.softserve.HomeWork.pt4;
+package com.softserve.PracticalTask.pt4;
 
 import java.util.Scanner;
 
