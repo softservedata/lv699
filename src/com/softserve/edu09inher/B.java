@@ -1,10 +1,11 @@
-package com.softserve.edu08.edu09inher;
+package com.softserve.edu09inher;
 
 public class B extends A {
     public int j = 321; // Achitecture (Encapsulation) Error
 
     public B() {
         // super();
+        //j = 1; // Compile Error
         //super(1);
         System.out.println("constructor B()");
     }
@@ -26,5 +27,5 @@ public class B extends A {
     public static void m() {
         System.out.println("\tstatic m() from B");
     }
-    
+
 }

@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class ApplSort {
     public static void main(String[] args) {
-        int[] arr = { 2, -3, 7, -4, 8, 1, 4 };
+        int[] arr = { 2, -3, 7, -4, 8, 1, 4, -1, 5 };
         // int[] arr = { 4, 3, 2, 1 };
-        // int[] arr = { 1, 2, 3, 4 };
+        //int[] arr = { 1, 2, 3, 4 };
         System.out.println("Original Array: " + Arrays.toString(arr));
         //
         /*-
@@ -30,7 +30,8 @@ public class ApplSort {
         */
         // /*-
         //Arrays.sort(arr);
-        System.out.println("Search -4: " + Arrays.binarySearch(arr, -4));
+        //System.out.println("\nSearch 1: " + Arrays.binarySearch(arr, 1));
+        //System.out.println("\nSearch -1: " + Arrays.binarySearch(arr, -1));
         Arrays.sort(arr, 1, 5);
         // */
         System.out.println("\nSorted Array: " + Arrays.toString(arr));

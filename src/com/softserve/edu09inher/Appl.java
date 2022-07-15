@@ -1,4 +1,4 @@
-package com.softserve.edu08.edu09inher;
+package com.softserve.edu09inher;
 
 public class Appl {
     public static void main(String[] args) {
@@ -25,8 +25,8 @@ public class Appl {
         System.out.println("i = " + a.getI());
         System.out.println("j = " + ((B) a).j); // Code Smell; // Downcasting
         */
-        /*-
-        A a = new B(); //(15);
+        // /*-
+        A a = new B(); // Upcating
         System.out.println("i = " + a.getI());
         if (a instanceof B) {
             System.out.println("j = " + ((B) a).j); // Downcasting
@@ -34,10 +34,11 @@ public class Appl {
         a.m(); // Code Smell;
         A.m();
         B.m();
-        */
-        //
+        // */
+        /*
         //Base base = new Base(); // Compile Error
         Base b = new B();
         System.out.println("i = " + b.getI());
+        */
     }
 }
