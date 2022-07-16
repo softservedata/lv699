@@ -9,7 +9,7 @@ public class Dog {
         Dog dog03 = new Dog("Jerry2", Breed.BEAGLE, 15);
 
         Dog dog = new Dog();
-        dog.GetOldest(dog01, dog02, dog03);
+        dog.getOldest(dog01, dog02, dog03);
 
         String duplicateName = dog.isSameName(dog01, dog02, dog03);
         System.out.print((duplicateName != null) ?
@@ -79,7 +79,7 @@ public class Dog {
         return duplicateName;
     }
 
-    public void GetOldest(Dog dog01, Dog dog02, Dog dog03) {
+    public void getOldest(Dog dog01, Dog dog02, Dog dog03) {
         Dog olDestDog;
         int maxOldestDog = 0;
 
