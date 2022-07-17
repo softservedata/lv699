@@ -1,6 +1,7 @@
 package com.softserve.edu;
 
-import com.softserve.edu.String;
+//import com.softserve.hw01.String;
+//import java.lang.String;
 
 /** This is a sample class which is used to demonstrate the use of multi-line comments.
    This comment does not appear in the java documentation
@@ -25,7 +26,7 @@ public class First {
     /** This is a sample class which is used to demonstrate the use of multi-line comments.
    This comment does not appear in the java documentation
     */
-    public static void main( java.lang.String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         System.out.println("Hello");
         First f1 = new First(10);
         /* This is a sample class which is used to demonstrate the use of multi-line comments.
@@ -61,7 +62,7 @@ public class First {
         //System.out.print("\tABC");
         //
         //com.softserve.hw01.String s1 = new String();
-        com.softserve.edu.String s1 = new com.softserve.edu.String();
+        com.softserve.hw01.String s1 = new com.softserve.hw01.String();
         s1.m1();
         //
         byte b1 = 49;

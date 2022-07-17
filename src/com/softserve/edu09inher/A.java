@@ -1,6 +1,7 @@
 package com.softserve.edu09inher;
 
-public class A extends Base { // extends Object {
+public class A extends Base {
+//public class A { // extends Object {
     private int i = 12;
 
     public A() {
@@ -12,6 +13,7 @@ public class A extends Base { // extends Object {
         System.out.println("constructor A(int i)");
     }
 
+    //@Override
     public int getI() {
         System.out.println("\tgetI() from A");
         return i;
