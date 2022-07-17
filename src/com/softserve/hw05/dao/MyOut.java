@@ -1,4 +1,4 @@
-package com.softserve.edu.edu09.dao;
+package com.softserve.hw05.dao;
 
 import java.util.Arrays;
 
