@@ -10,9 +10,10 @@ public class MyIn implements In {
         sc = new Scanner(System.in);
     }
 
-    public int readInt(String msg) {
+    public int readInt(String... msg) {
         if (msg != null) {
-            System.out.print("Enter please number of your month: ");
+            System.out.print("Enter please number: ");
+
         }
         return sc.nextInt();
     }
