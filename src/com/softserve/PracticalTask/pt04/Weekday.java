@@ -44,6 +44,7 @@ import java.util.Scanner;
                     break;
                 default:
                     System.out.println("Please enter the week day:");
+
             }
         }
 
