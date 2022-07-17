@@ -1,6 +1,6 @@
 package com.softserve.hw05.serv;
 
-public class Calc {
+public class Ten {
 
     public int Number(int [] numbers) {
         int number=0;

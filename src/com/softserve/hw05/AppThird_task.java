@@ -4,12 +4,11 @@ import com.softserve.hw05.dao.MyIn;
 import com.softserve.hw05.dao.MyOut;
 import com.softserve.hw05.serv.BusLogic;
 
-public class Appl10 {
+public class AppThird_task {
     public static void main(String[] args) {
-        new BusLogic(new MyIn(), new MyOut()).calcMas();
+        new BusLogic(new MyIn(), new MyOut()).intNumbers();
     }
-    //    2 Enter 10 integer numbers. Calculate the sum of first 5 elements if they are positive or product of last 5 element in the other case.
-//    3 Enter 5 integer numbers. Find
+    //    3 Enter 5 integer numbers. Find
 //    position of second positive number;
 //    minimum and its position in the array.
 //    Count the product of all entered even numbers.

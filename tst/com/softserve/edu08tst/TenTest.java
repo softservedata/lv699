@@ -2,7 +2,7 @@ package com.softserve.edu08tst;
 
 import org.junit.*;
 
-public class CalcTest {
+public class TenTest {
     private static Calc calc;
 
     @BeforeClass
