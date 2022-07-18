@@ -1,30 +1,31 @@
 package com.softserve.edu11sort;
 
+import java.io.Serializable;
 import java.util.Comparator;
 
 public class Student implements Comparable<Student> {
 
-//	public static class ByDestName implements Comparator<Student> {
-//		@Override
-//		public int compare(Student st1, Student st2) {
-//			return -st1.getName().compareTo(st2.getName());
-//		}
-//	}
-//
-//	public class ByAge implements Comparator<Student> {
-//		@Override
-//		public int compare(Student st1, Student st2) {
-//			return st1.getAge() - st2.getAge();
-//		}
-//	}
-//
-//	public static class ByNameAndAge implements Comparator<Student> {
-//		@Override
-//		public int compare(Student st1, Student st2) {
-//			int byName = st1.getName().compareTo(st2.getName());
-//			return byName == 0 ? st1.getAge() - st2.getAge() : byName;
-//		}
-//	}
+	public static class ByDestName implements Comparator<Student> {
+		@Override
+		public int compare(Student st1, Student st2) {
+			return -st1.getName().compareTo(st2.getName());
+		}
+	}
+
+	public class ByAge implements Comparator<Student> {
+		@Override
+		public int compare(Student st1, Student st2) {
+			return st1.getAge() - st2.getAge();
+		}
+	}
+
+	public static class ByNameAndAge implements Comparator<Student> {
+		@Override
+		public int compare(Student st1, Student st2) {
+			int byName = st1.getName().compareTo(st2.getName());
+			return byName == 0 ? st1.getAge() - st2.getAge() : byName;
+		}
+	}
 
 	// ----------------------------------------------------------------
 	

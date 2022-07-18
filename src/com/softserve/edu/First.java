@@ -8,6 +8,7 @@ package com.softserve.edu;
 */
 public class First {
     private int i = 123;
+    private final double PI = 3.14;
 
     public First() {
         System.out.println("public A() done");
@@ -20,14 +21,18 @@ public class First {
     }
 
     public void m1() {
+        final int THREE = 3;
         System.out.println("\tfrom m1(), i = " + i);
+        //THREE = 31;
     }
 
     /** This is a sample class which is used to demonstrate the use of multi-line comments.
    This comment does not appear in the java documentation
     */
     public static void main(String[] args) throws InterruptedException {
+        final int NINE = 9;
         System.out.println("Hello");
+        // NINE = 10; // Error
         First f1 = new First(10);
         /* This is a sample class which is used to demonstrate the use of multi-line comments.
            This comment does not appear in the java documentation
