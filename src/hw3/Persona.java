@@ -10,6 +10,8 @@ public class Persona {
 	private int vik;
 	private String newName;
 	
+
+
 	@Override
 	public String toString() {
 		return "Persona [firstName=" + firstName + ", lastName=" + lastName + ", vik="
@@ -26,6 +28,7 @@ public class Persona {
 	public Persona(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.newName = newName;
 		
 	}
 	
@@ -45,6 +48,9 @@ public class Persona {
 		return newName;
 	}
 	
+	public void setNewName(String newName) {
+		this.newName = newName;
+	}
 
 		
 

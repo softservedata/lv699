@@ -1,4 +1,4 @@
-package HW4;
+package hw4;
 
 public enum Breed {
 	BEAGLE("Beagle"),

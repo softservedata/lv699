@@ -1,4 +1,4 @@
-package HW4;
+package hw4;
 
 import java.io.ObjectInputStream.GetField;
 
@@ -6,9 +6,8 @@ public class NumberMinMax {
 
 	public static void main(String[] args) {
 		NumberMinMax dif = new NumberMinMax();
-		NumberMinMax dif1 = new NumberMinMax();
 		System.out.println("Minimal number is " + dif.mini(358900, 70000, 300));
-		System.out.println("Maximal number is " + dif1.maxi(400, 70000, 2500000));
+		System.out.println("Maximal number is " + dif.maxi(400, 70000, 2500000));
 
 	}
 
