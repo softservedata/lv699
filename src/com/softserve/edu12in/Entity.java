@@ -3,7 +3,7 @@ package com.softserve.edu12in;
 class Entity {
 	
 	private static class Counter {
-		private void setCount() {
+		private void addCount() {
 			count = count + 1;
 		}
 	}
@@ -20,11 +20,11 @@ class Entity {
 
 	public Entity() {
 		// new Counter().setCount();
-		counter.setCount();
+		counter.addCount();
 		System.out.println("Entity() constructor done");
 	}
 
-	public static int getCount() {
+	public int getCount() {
 		return count;
 	}
 

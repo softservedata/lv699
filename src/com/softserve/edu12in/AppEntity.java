@@ -5,7 +5,7 @@ public class AppEntity {
 		Entity e1 = new Entity();
 		Entity e2 = new Entity();
 		Entity e3 = new Entity();
-		System.out.println("Count of Entity objects = " 
-				+ Entity.getCount());
+		//System.out.println("Count of Entity objects = " + Entity.getCount());
+		System.out.println("Count of Entity objects = " + e1.getCount());
 	}
 }

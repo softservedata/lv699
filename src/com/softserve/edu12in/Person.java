@@ -56,7 +56,10 @@ public class Person {
 
 	public void run() {
 		// final int bound = 100;
-		int bound = 100;
+		//int bound = 100;
+		//
+		int bound;
+		bound = 100;
 		//
 		class AgeGenerator {
 			private String test = "_empty_";
@@ -65,18 +68,20 @@ public class Person {
 				Random random = new Random();
 				// age = random.nextInt(100);
 				age = random.nextInt(bound);
-				// bound = 20; // Error
+				// bound = 20; // compile Error
 			}
 
 			void printRandomNumber() {
 				System.out.println("Random Age: " + age + " " + test);
-				System.out.println("Random bound: " + bound);
+				System.out.println("Random bound: " + bound); // read access if bound is read only
 			}
 		}
 		//
+		// int bound = 100;
 		AgeGenerator ag = new AgeGenerator();
 		ag.test = "_Updated_";
 		ag.setRandomAge();
 		ag.printRandomNumber();
+		//bound = 101;
 	}
 }
