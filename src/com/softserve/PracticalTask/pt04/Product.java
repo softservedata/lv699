@@ -1,129 +1,76 @@
 package com.softserve.PracticalTask.pt04;
 
 public class Product {
-    private static double price;
+    private static String name;
+    private static int price;
     private static int quantity;
-    private static String nameProduct;
-    private static String expensiveProduct=" ";
-    private static String biggestProduct=" ";
-    private static String getNameProduct = "";
+    public static int bigPrice;
 
-    public static int getBiggest() {
-        return biggest;
+    public static void setBigPrice(int bigPrice) {
+        Product.bigPrice = bigPrice;
     }
 
-    public static void setBiggest(int biggest) {
-        Product.biggest = biggest;
+    public static int biggestQuantity;
+
+    public static String getName() {
+        return name;
     }
 
-    public static void setBiggestProduct(String biggestProduct) {
-        Product.biggestProduct = biggestProduct;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public static String getBiggestProduct() {
-        return biggestProduct;
-    }
-
-    private static double expensive;
-    private static int biggest;
-
-
-
-
-    public Product() {
-        this.price = 0;
-        this.quantity = 0;
-        this.nameProduct = " ";
-        this.expensive = 0;
-        this.biggest = 0;
-
-    }
-
-    public Product(double price, int quantity, String nameProduct) {
-        this.price = price;
-        this.quantity = quantity;
-        this.nameProduct = nameProduct;
-    }
-
-    public static double expensiveProduct() {
-        return expensive;
-    }
-    public static double biggestProduct() {
-        return biggest;
-    }
-
-
-
-
-    public static double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public static String nameProduct() {
-        return nameProduct;
-    }
-
-
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
-    public static int getQuantity() {
-        return quantity;
+    public Product(String name, int price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+        bigPrice = 1;
+        this.biggestQuantity = 0;
     }
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 
-    public static String getNameProduct() {
-        return nameProduct;
+
+    public static int getQuantity() {
+        return quantity;
     }
 
-    public void setNameProduct(String nameProduct) {
-        this.nameProduct = nameProduct;
-    }
-
-    @Override
-    public String toString() {
-        return "Product " +
-                "price= " + price +
-                " quantity= " + quantity +
-                " nameProduct= " + nameProduct +
-                ':';
-    }
+    public static int getBigPrice() {
+        if (price > bigPrice) {
+            bigPrice = price;
 
 
-    public static int biggestQuantity() {
-
-
-        if (biggest > getQuantity()) {
-            biggest = getQuantity();
-            biggestProduct = getNameProduct;
+            bigPrice = price;
         }
 
-        return biggest;
-
+        return bigPrice;
     }
-    public static double mostExpensive() {
 
-        if (expensive > getPrice()) {
-            expensive = getPrice();
-            expensiveProduct = nameProduct;
-            quantity = getQuantity();
+        public static int getBiggestQuantity () {
+            if (quantity > biggestQuantity) {
+                biggestQuantity = quantity;
+
+            }
+            return quantity;
         }
-        return expensive;
 
+        @Override
+        public String toString () {
+            return "Product:" +
+                    "name=" + name +
+                    " price=" + price +
+                    " quantity=" + quantity +
+                    ';';
+        }
     }
-
-
-}
-
-
-
-
-
-
-
-
 

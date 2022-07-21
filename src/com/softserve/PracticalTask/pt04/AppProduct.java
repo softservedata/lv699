@@ -1,18 +1,18 @@
 package com.softserve.PracticalTask.pt04;
 
-
-
 public class AppProduct {
+
     public static void main(String[] args) {
-        Product p1 = new Product(20, 7,"CocaCola");
-        Product p2 = new Product(18, 1, "Pepsi");
-        Product p3 = new Product(15, 10,"Morshynska");
-        Product p4 = new Product(30, 2, "Borjomi");
+        Product pr1 = new Product("Coca-colla", 25,10);
+        Product pr2 = new Product("Morshynska", 15,7);
+        Product pr3 = new Product("Borjomi", 10,8);
+        Product pr4 = new Product("Pepsi", 30,17);
 
-        Product.mostExpensive();
 
-        System.out.println("The most expensive Product:"+ Product.nameProduct() + " price "+ Product.getPrice()+"UAH "+" quantity "+ Product.getQuantity());
-        Product.biggestQuantity();// method dont work:::((((
-        System.out.println("The biggest quantity:"+Product.getQuantity());
+
+        System.out.println("the biggest quantity "+Product.getBiggestQuantity()+" product "+Product.getName());
+        System.out.println();
+        System.out.println("the highest price "+Product.getBigPrice()+" in the product "+ Product.getName()+" quantity "+Product.getQuantity());
     }
+
 }
