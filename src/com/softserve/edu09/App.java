@@ -1,9 +1,9 @@
-package com.softserve.edu.edu09;
+package com.softserve.edu09;
 
-import com.softserve.edu.edu09.dao.In;
-import com.softserve.edu.edu09.dao.MyIn;
-import com.softserve.edu.edu09.dao.MyOut;
-import com.softserve.edu.edu09.serv.BusLogic;
+import com.softserve.edu09.dao.In;
+import com.softserve.edu09.dao.MyIn;
+import com.softserve.edu09.dao.MyOut;
+import com.softserve.edu09.serv.BusLogic;
 
 public class App {
 
