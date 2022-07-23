@@ -25,7 +25,7 @@ public class AppBr {
 		System.out.println("Array: " + Arrays.toString(arr));
 		sc.close();
 		*/
-		/*-
+
 		int[] arr = { 2, -5, 7, 8, -4, 1 };
 		//
 		int sum = 0;
@@ -47,8 +47,8 @@ public class AppBr {
 			}
 		}
 		System.out.println("Amount = " + amount);
-		*/
-	    // /*-
+
+	     /*-
 		int[] arr = { 2, -5, 7, 8, -4, 1, 7 };
 	    int imax = 0;
 		int max = arr[imax];
