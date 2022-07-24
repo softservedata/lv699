@@ -1,4 +1,4 @@
-package com.softserve.hw07;
+package com.softserve.hw07.first;
 
 public class SalariedEmployee extends Employee implements Payment, Comparable<Employee>  {
    private String socialSecurityNumber;

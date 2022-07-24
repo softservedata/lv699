@@ -1,6 +1,4 @@
-package com.softserve.hw07;
-
-import com.softserve.hw06.first_task.*;
+package com.softserve.hw07.first;
 
 import java.util.*;
 

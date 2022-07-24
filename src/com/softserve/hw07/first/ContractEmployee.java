@@ -1,6 +1,4 @@
-package com.softserve.hw07;
-
-import java.util.Objects;
+package com.softserve.hw07.first;
 
 public class ContractEmployee extends Employee implements Comparable<ContractEmployee>,Payment {
     private String federalTaxIdmember;
