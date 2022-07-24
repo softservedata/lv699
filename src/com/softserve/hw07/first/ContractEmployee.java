@@ -1,26 +1,26 @@
 package com.softserve.hw07.first;
 
-public class ContractEmployee extends Employee implements Comparable<ContractEmployee>,Payment {
-    private String federalTaxIdmember;
+public class ContractEmployee extends Employee implements Payment {
+    private int federalTaxIdmember;
     private int fixed_monthly_payment;
 
     public ContractEmployee() {
         super();
         fixed_monthly_payment=0;
-        federalTaxIdmember="";
+        federalTaxIdmember=0;
     }
 
-    public ContractEmployee(String employeeId,String Name,String federalTaxIdmember, int fixed_monthly_payment) {
+    public ContractEmployee(String employeeId,String Name,int federalTaxIdmember, int fixed_monthly_payment) {
         super(employeeId,Name);
         this.fixed_monthly_payment = fixed_monthly_payment;
         this.federalTaxIdmember=federalTaxIdmember;
     }
 
-    public String getFederalTaxIdmember() {
+    public int getFederalTaxIdmember() {
         return federalTaxIdmember;
     }
 
-    public void setFederalTaxIdmember(String federalTaxIdmember) {
+    public void setFederalTaxIdmember(int federalTaxIdmember) {
         this.federalTaxIdmember = federalTaxIdmember;
     }
 
@@ -45,10 +45,5 @@ public class ContractEmployee extends Employee implements Comparable<ContractEmp
         int salary=0;
         salary = this.fixed_monthly_payment;
         return salary;
-    }
-
-    @Override
-    public int compareTo(ContractEmployee employee) {
-        return this.getName().compareTo(employee.getName());
     }
 }

@@ -8,12 +8,12 @@ public class App {
 
         List<Employee> employees = new ArrayList<>();
         employees.add(new SalariedEmployee("1","Oksana", "2345",23,48));
-        employees.add(new ContractEmployee("2","Bogdan","3978",3000));
-        employees.add(new ContractEmployee("3","Orest","5438",1000));
+        employees.add(new ContractEmployee("2","Bogdan",3978,3000));
+        employees.add(new ContractEmployee("3","Orest",5438,1000));
         employees.add(new SalariedEmployee("4","Stepan", "4856",100,42));
-        employees.add(new ContractEmployee("5","Vitalii","9653",1200));
+        employees.add(new ContractEmployee("5","Vitalii",9653,1200));
         employees.add(new SalariedEmployee("6","Danylo", "1425",300,15));
-        employees.add(new ContractEmployee("7","Vasyl","0809",1500));
+        employees.add(new ContractEmployee("7","Vasyl",2367,1500));
         for (Employee employee : employees) {
             if (employee instanceof SalariedEmployee) {
                 int salary = ((SalariedEmployee) employee).calculatePay();

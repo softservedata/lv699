@@ -1,6 +1,6 @@
 package com.softserve.hw07.first;
 
-public class SalariedEmployee extends Employee implements Payment, Comparable<Employee>  {
+public class SalariedEmployee extends Employee implements Payment{
    private String socialSecurityNumber;
     private int hourly_rate;
     private int  number_of_hours_worked;
@@ -58,10 +58,6 @@ public class SalariedEmployee extends Employee implements Payment, Comparable<Em
         return salary;
     }
 
-    @Override
-    public int compareTo(Employee o) {
-        return 0;
-    }
 
 
 }
