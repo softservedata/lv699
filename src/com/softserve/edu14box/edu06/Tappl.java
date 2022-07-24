@@ -1,4 +1,4 @@
-package com.softserve.edu06;
+package com.softserve.edu14box.edu06;
 
 public class Tappl {
     
