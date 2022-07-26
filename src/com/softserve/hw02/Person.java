@@ -11,6 +11,8 @@ public class Person {
     private int birthYear;
     private static final int currentYear = 2022;
 
+    private Scanner scanner = new Scanner(System.in);
+
     public Person() {
         firstName = "";
         lastName = "";
@@ -26,10 +28,10 @@ public class Person {
         return currentYear - birthYear;
     }
 
-    public void input(String fName, String lName, int birthYear) {
-              setFirstName(fName);
-              setLastName(lName);
-              setBirthYear(birthYear);
+    public void input() {
+       this.firstName = scanner.nextLine();
+       this.lastName = scanner.nextLine();
+       this.birthYear =scanner.nextInt();
     }
 
     public void output() {
@@ -50,28 +52,17 @@ public class Person {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+
 
     public int getBirthYear() {
         return birthYear;
     }
 
-    public void setBirthYear(int birthYear) {
-        if (birthYear >= 1920) {
-            this.birthYear = birthYear;
-        }
-        else {
-            System.out.println("Please enter the correct value");
-        }
-    }
+
+
 }
