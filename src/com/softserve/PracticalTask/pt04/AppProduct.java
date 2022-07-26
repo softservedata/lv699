@@ -6,7 +6,7 @@ public class AppProduct {
         Product pr1 = new Product("Coca-colla", 25,10);
         Product pr2 = new Product("Morshynska", 15,7);
         Product pr3 = new Product("Borjomi", 10,8);
-        Product pr4 = new Product("Pepsi", 30,17);
+        Product pr4 = new Product("Pepsi", 30,6);
 
 
 

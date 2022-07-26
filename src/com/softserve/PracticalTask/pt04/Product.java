@@ -47,8 +47,6 @@ public class Product {
 
     public static int getBigPrice() {
         if (price > bigPrice) {
-            bigPrice = price;
-
 
             bigPrice = price;
         }
