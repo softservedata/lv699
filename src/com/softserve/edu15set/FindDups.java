@@ -6,7 +6,7 @@ public class FindDups {
 	public static void main(String[] args) {
 		/*-
 		Set<String> s = new HashSet<>();
-		//List<String> s = new LinkedList<>();
+		// List<String> s = new LinkedList<>();
 		for (int i = 0; i < args.length; i++) {
 		    if (!s.add(args[i])) {
 		        System.out.println("Duplicate detected: " + args[i]);
@@ -46,6 +46,7 @@ public class FindDups {
 		*/
 		/*-
 		//Set<String> s = new HashSet<>();
+		//Set<String> s = new TreeSet<>();
 		List<String> s = new LinkedList<>();
 		for (int i = 0; i < args.length; i++) {
 		    s.add(args[i]);

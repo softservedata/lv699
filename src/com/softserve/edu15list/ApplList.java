@@ -65,7 +65,7 @@ public class ApplList {
 		*/
         //
         // Iterator
-		// /*-
+		/*-
 		List<String> list = new ArrayList<>();
 		list.add("First element");
 		list.add("Second element");
@@ -91,7 +91,7 @@ public class ApplList {
 			String current = iterator.next();
 			System.out.println("current: " + current);
 		}
-		// */
+		*/
 		/*-
 		List<String> list = new ArrayList<>();
 		list.add("First element");
@@ -118,7 +118,7 @@ public class ApplList {
 //            }
 //        }
         */
-		/*-
+		// /*-
 		List<String> list = new ArrayList<>();
 		list.add("First element");
 		list.add("Second element");
@@ -152,12 +152,12 @@ public class ApplList {
 		        iterator.remove();
 		    }
 		}
-		*/
-		/*-
+		// */
+		// /*-
 		System.out.println("\nFinal List:");
 		for (String current : list) {
 		    System.out.println(current);
 		}
-		*/
+		// */
     }
 }

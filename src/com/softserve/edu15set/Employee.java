@@ -69,9 +69,9 @@ public class Employee implements Comparable<Employee> {
 			return false;
 		}
 		//
-		if (hashCode() != obj.hashCode()) {
-			return false;
-		}
+//		if (hashCode() != obj.hashCode()) {
+//			return false;
+//		}
 		//
 		Employee other = null;
 		if (obj instanceof Employee) {
