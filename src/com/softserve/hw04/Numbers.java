@@ -25,7 +25,7 @@ public class Numbers {
             max = c;
             min = a < b ? a : b;
         }
-        System.out.println("The max number is " + max + " and the min number equals " + min);
+        System.out.println("The max number is " + max + " and the min number is " + min);
     }
 
     public static void main(String[] args) {
@@ -46,6 +46,6 @@ public class Numbers {
 
         Numbers.minmax(x, y, z);
 
-
+        scn.close();
     }
 }
