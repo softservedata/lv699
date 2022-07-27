@@ -28,6 +28,8 @@ public class Numbers {
         System.out.println("The max number is " + max + " and the min number is " + min);
     }
 
+//-----------------------------------------------------------------------------------
+
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         System.out.print("Enter three float numbers: ");
