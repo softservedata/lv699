@@ -3,17 +3,22 @@ package com.softserve.edu16mp;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class AppMap {
 	public static void main(String[] args) {
 		Map<Object, String> map = new HashMap<>();
 		// Map<Object, String> map = new TreeMap<>(new MyComp());
+		//Map<Object, String> map = new TreeMap<>();
 		map.put("key1", "one");
 		map.put(new Object(), "two");
-		map.put(1, "3");
+		map.put(1, "3"); // 1 convert to new Integer(1);
 		map.put(new Object(), "three");
 		map.put(null, "is_simple_null");
+		//
+		map.put(2000, "200");
 		System.out.println("map = " + map);
+		map.put(2000, "201");
 		map.put(null, "is_second_null");
 		System.out.println("next map = " + map);
 		//
@@ -23,7 +28,7 @@ public class AppMap {
 			System.out.println("key = " + entry.getKey() + " value = " + entry.getValue());
 		}
 		*/
-		// /*-
+		/*-
 		String res = map.remove(1);
 		System.out.println("res = " + res);
 		System.out.println("Second");
@@ -36,6 +41,6 @@ public class AppMap {
 		System.out.println("res = " + res);
 		System.out.println("element by \"key1\" = " + map.get("key1"));
 		System.out.println("non existing element by \"key12\" = " + map.get("key12"));
-		// */
+		*/
 	}
 }
