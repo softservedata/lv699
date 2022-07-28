@@ -31,7 +31,8 @@ public class Person {
     public void input() {
        this.firstName = scanner.nextLine();
        this.lastName = scanner.nextLine();
-       this.birthYear =scanner.nextInt();
+       this.birthYear = scanner.nextInt();
+       scanner.close();
     }
 
     public void output() {
