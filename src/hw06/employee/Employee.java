@@ -1,6 +1,7 @@
 package hw06.employee;
 
 public class Employee {
+
     private String name;
     private int age;
     private double salary;

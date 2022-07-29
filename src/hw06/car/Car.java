@@ -12,7 +12,6 @@ public abstract class Car {
         this.yearOfManufacture = yearOfManufacture;
         this.yearOfManufactureStop = yearOfManufactureStop;
     }
-
     public abstract void run();
     public abstract void stop();
 }

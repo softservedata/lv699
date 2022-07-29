@@ -1,6 +1,7 @@
 package hw06.bird;
 
 public class NonFlyingBird extends Bird {
+
     public NonFlyingBird(String feathers, boolean layEggs) {
         super(feathers, layEggs);
     }

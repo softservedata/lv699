@@ -10,5 +10,4 @@ public abstract class Bird {
     }
 
     public abstract String fly();
-
 }
