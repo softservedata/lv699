@@ -7,20 +7,20 @@ import java.util.Arrays;
 
 public class SecondTask {
     public static void main(String[] args) {
-        int[] numbers = {1, 2, 3, 4, 5, 6, 7, -8, 9, 10};
+        int[] numbers = {1, 2, 3, -4, 5, 6, 7, 8, 9, 10};
 
         SecondTask a = new SecondTask();
         System.out.println(Arrays.toString(numbers));
-         System.out.println("Sum of first 5 elements = " + a.getMult(numbers));
+         System.out.println("Sum of first 5 elements = " + a.getResult(numbers));
 
     }
-    public int getMult(int[] numbers) {
+    public int getResult(int[] numbers) {
         int sum = 0;
-        int mult = 0;
+        int dob = 0;
         for (int i = 0; i < 5; i++) {
             if (numbers[i] > 0)  sum += numbers[i];
             {
-                if (numbers[i]< 0) return mult=numbers[5]*numbers[6]*numbers[7]*numbers[8]*numbers[9];
+                if (numbers[i]< 0) return dob=numbers[5]*numbers[6]*numbers[7]*numbers[8]*numbers[9];
 
             }
         }
