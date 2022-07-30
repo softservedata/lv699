@@ -1,4 +1,4 @@
-package com.softserve.hw07;
+package com.softserve.hw07.task1;
 
 public class ContractEmployee extends Employee implements Payment {
     private double hourlyRate;

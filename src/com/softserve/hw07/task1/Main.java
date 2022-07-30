@@ -1,4 +1,4 @@
-package com.softserve.hw07;
+package com.softserve.hw07.task1;
 
 import java.util.Arrays;
 
