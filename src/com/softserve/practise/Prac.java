@@ -1,6 +1,7 @@
 package com.softserve.practise;
 
 public class Prac {
+	int i=0;
 
 		public static void main(String[] args) {
 		Student student1 = new Student("Oleg");
