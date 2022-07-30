@@ -63,6 +63,7 @@ workspace.xml
 *.ucls
 
 # Multi Modules Project
+/**/.edu/
 /**/.externalToolBuilders/
 /**/.settings/
 /**/.allure/
@@ -70,7 +71,7 @@ workspace.xml
 /**/doc/
 /**/bin/
 /**/build/
-#/**/lib/
+/**/lib/
 /**/test-output/
 /**/allure-results/
 /**/report/
@@ -129,3 +130,5 @@ workspace.xml
 # npm
 /node_modules/
 /**/node_modules/
+/**/dev
+/**/practise

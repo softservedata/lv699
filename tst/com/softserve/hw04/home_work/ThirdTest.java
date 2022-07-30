@@ -8,5 +8,8 @@ public class ThirdTest {
 
     @Test
     public void main() {
+        int actual=400;
+        int expected= 400;
+        assertEquals(actual,expected);
     }
 }

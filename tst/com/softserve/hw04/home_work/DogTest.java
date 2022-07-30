@@ -5,33 +5,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class DogTest {
-
-    @Test
-    public void getName() {
-    }
-
-    @Test
-    public void setName() {
-    }
-
-    @Test
-    public void getBreed() {
-    }
-
-    @Test
-    public void setBreed() {
-    }
-
-    @Test
-    public void getAge() {
-    }
-
-    @Test
-    public void setAge() {
-    }
-
     @Test
     public void getnameoftheoldest() {
+
     }
 
     @Test
