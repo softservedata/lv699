@@ -4,18 +4,17 @@ import java.util.Objects;
 
 public class Dog {
     private String name;
-    private String breed;
+    private Breed breed;
     private int age;
     private static int temp=0;
     private static String nameoftheoldest;
 
     public Dog() {
         name = "";
-        breed = "";
         age = 0;
         nameoftheoldest="";
     }
-    public Dog(String name, String breed, int age) {
+    public Dog(String name, Breed breed, int age) {
         this.name = name;
         this.breed = breed;
         this.age = age;
@@ -29,11 +28,11 @@ public class Dog {
         this.name = name;
     }
 
-    public String getBreed() {
+    public Breed getBreed() {
         return breed;
     }
 
-    public void setBreed(String breed) {
+    public void setBreed(Breed breed) {
         this.breed = breed;
     }
 
