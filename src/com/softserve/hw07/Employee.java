@@ -1,4 +1,5 @@
 package com.softserve.hw07;
+
 import java.util.Comparator;
 import java.util.Objects;
 
@@ -7,13 +8,14 @@ public class Employee implements Comparable<Employee> {
     private double finalPayment;
 
 
-  public static class ByFinalPayment implements Comparator<Employee> {
+    public static class ByFinalPayment implements Comparator<Employee> {
         @Override
         public int compare(Employee a, Employee b) {
             return (int) (a.getFinalPayment() - b.getFinalPayment());
         }
 
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -30,7 +32,7 @@ public class Employee implements Comparable<Employee> {
         this.finalPayment = finalPayment;
     }
 
-    public double  calculatePay() {
+    public double calculatePay() {
         return 0;
     }
 
@@ -43,4 +45,4 @@ public class Employee implements Comparable<Employee> {
         return (int) (-finalPayment + c.getFinalPayment());
     }
 
-    }
+}
