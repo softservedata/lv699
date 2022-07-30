@@ -37,6 +37,7 @@ hs_err_pid*
 *.[oa]
 
 # Single Module Project
+/.edu/
 /.externalToolBuilders/
 /.settings/
 /.metadata/
