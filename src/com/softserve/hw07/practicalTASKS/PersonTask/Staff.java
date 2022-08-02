@@ -12,7 +12,7 @@ public abstract class Staff extends Person {
         TYPE_PERSON = "Staff";
     }
 
-    public abstract double salary() ;
+    public abstract double salary();
     }
 
 

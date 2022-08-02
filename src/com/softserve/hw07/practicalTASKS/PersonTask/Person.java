@@ -8,7 +8,6 @@ public abstract class Person {
     }
 
     public abstract String print();
- public double salary() {
-     return 0;
+
  }
-}
+

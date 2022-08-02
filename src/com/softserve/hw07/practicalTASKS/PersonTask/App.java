@@ -12,7 +12,10 @@ public class App {
 
     for (int i=0; i < arr.length; i++) {
        System.out.println(arr[i].print());
-        System.out.println(arr[i].salary());
+       if (arr[i] instanceof Staff) {
+        Staff s = (Staff)arr[i];
+           System.out.println(s.salary());
+    }
     }
 
     }
