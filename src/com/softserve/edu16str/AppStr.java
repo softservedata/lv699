@@ -83,7 +83,7 @@ public class AppStr {
 		System.out.println("a1.hashCode() =  " + a1.hashCode());
 		System.out.println("a2.hashCode() =  " + a2.hashCode());
 		*/
-		// /*-
+		/*-
 		final double PI = 3.1415926;
 		String formatStr = "%S is =%06.2f\n";
 		System.out.println("const PI = " + PI);
@@ -93,14 +93,15 @@ public class AppStr {
 		//System.out.printf("hashcode =%h", 64);
 		System.out.printf("\nhashcode =%h", 4096);
 		System.out.printf("\nhashcode =%H", 11259375L);
-		// */
-		/*-
+		*/
+		// /*-
 		String s1 = new String("Hello");
 		String s2 = " And Goodbye";
 		String str = s1 + s2;
 		// str = s1.concat(s2);
 		System.out.println("str = " + str);
 		//
+		//StringBuffer sbf = new StringBuffer("abc");
 		StringBuilder sb = new StringBuilder(s1);
 		sb.append(s2);
 		// str = sb.toString();
@@ -111,6 +112,6 @@ public class AppStr {
 		System.out.println("new sb.length() = " + sb.length());
 		System.out.println("new sb.capacity() = " + sb.capacity());
 		System.out.println("Reverse sb = " + sb.reverse());
-		*/
+		// */
 	}
 }
