@@ -1,13 +1,10 @@
-package com.softserve.homework.task7;
-
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-import javafx.collections.transformation.SortedList;
+package com.softserve.homework.task7.employee;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.*;
+
 public class Add {
 
 

@@ -1,4 +1,4 @@
-package com.softserve.homework.task7;
+package com.softserve.homework.task7.employee;
 
 public class ContractEmployee extends Employee implements Payment{
     protected String name;
