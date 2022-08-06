@@ -6,16 +6,16 @@ public class HW4 {
 
 	public static void main(String[] args) {
 		
-		FloatReadForCheck res = new FloatReadForCheck();
-		System.out.println(res.getY());
+		FloatReadForCheck result = new FloatReadForCheck();
+		System.out.println(result.getY());
 				
 
 //		Dog dog1 = new Dog("dog1", 1, Breed.BEAGLE);
 //		Dog dog2 = new Dog("dog2", 2, Breed.BOXER);
 //		Dog dog3 = new Dog("dog3", 3, Breed.DOG);
-//
+
 //		Dog dog = new Dog();
-//		dog.dogYear(dog1, dog2, dog3);
+//    	dog.dogYear(dog1, dog2, dog3);
 //		System.out.println(dog.inAll);
 //
 //		// Check dogs on same name
@@ -24,7 +24,6 @@ public class HW4 {
 //		System.out.println("Comparing dog1 and Dog3: " + (dog1.getName()).equals(dog3.getName()));
 //		System.out.println("Comparing dog2 and Dog3: " + (dog2.getName()).equals(dog3.getName()));
 //		
-//		
 		
 		
 		
@@ -35,6 +34,7 @@ public class HW4 {
 		
 		
 		
+	FloatReadForCheck.closeScan();	
 		
 	}
 }
