@@ -1,4 +1,4 @@
-package com.softserve.HomeWork.hw6.task1;
+package com.softserve.HomeWork.hw06.task1;
 
 public class FlyingBird extends Bird {
 

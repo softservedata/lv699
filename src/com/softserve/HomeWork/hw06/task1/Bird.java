@@ -1,4 +1,4 @@
-package com.softserve.HomeWork.hw6.task1;
+package com.softserve.HomeWork.hw06.task1;
 
 //Develop abstract class Bird with attributes feathers and layEggs and an abstarct method fly().  
 //        Develop classes FlyingBird and NonFlyingBird. Create class Eagle, Swallow, Penguin and Chicken.
