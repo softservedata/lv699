@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Student st1 = new Student(new FullName("Ivan", "Petrov"), 25, 3);
-        Student st2 = new Student(new FullName("Maria", "Kiseliova"), 18, 1);
+        Student st1 = new Student("Ivan", "Petrov", 25, 3);
+        Student st2 = new Student("Maria", "Kiseliova", 18, 1);
 
         ArrayList<Student> students = new ArrayList<>();
         students.add(st1);

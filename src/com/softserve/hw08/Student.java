@@ -3,8 +3,8 @@ package com.softserve.hw08;
 public class Student extends Person{
     private int course;
 
-    public Student(FullName fullName, int age, int course) {
-        super(fullName, age);
+    public Student(String firstName, String lastName, int age, int course) {
+        super(firstName, lastName, age);
         this.course = course;
     }
 

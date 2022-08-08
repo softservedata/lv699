@@ -1,17 +1,22 @@
 package com.softserve.hw08;
 
-public abstract class Person {
+public abstract class Person extends FullName{
     private FullName fullName;
     private int age;
 
-    public Person(FullName fullName, int age) {
-        this.fullName = fullName;
+    public Person() {
+        fullName = new FullName();
+        age = 0;
+    }
+
+    public Person(String firstName, String lastName, int age) {
+        super(firstName, lastName);
         this.age = age;
     }
 
     public String info(){
-        String info = String.format("First name: %s, Last name: %s, Age: %d", fullName.getFirstName(), fullName.getLastName(), getAge());
-        return info;
+        return String.format("First name: %s, Last name: %s, Age: %d",
+                             fullName.getFirstName(), fullName.getLastName(), getAge());
     }
 
     public abstract String activity();
