@@ -1,4 +1,4 @@
-package com.softserve.edu11sort.edu;
+package com.softserve.edu;
 
 //import com.softserve.hw01.String;
 //import java.lang.String;

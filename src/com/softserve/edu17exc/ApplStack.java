@@ -29,7 +29,7 @@ public class ApplStack {
 		} catch (Exception e) {
 			// System.err.println(e.getMessage() + "\n");
 			System.out.println(e.getMessage() + "\n");
-			e.printStackTrace();
+			e.printStackTrace(); // Save to log (print info to file/console)
 		}
 
 	}

@@ -4,7 +4,7 @@ public class AppEx {
 
     static double safeSqrt(double x) throws ArithmeticException {
         if (x < 0.0) {
-            throw new ArithmeticException();
+            throw new ArithmeticException("parameter < 0");
         }
         return Math.sqrt(x);
     }
@@ -14,7 +14,7 @@ public class AppEx {
         try {
             result = safeSqrt(x);
         } catch (ArithmeticException e) {
-            System.out.println("Error Founded = " + e);
+            System.out.println("Error Founded = " + e + "  message = " + e.getMessage());
             result = -1;
         }
         System.out.println("result: " + result);

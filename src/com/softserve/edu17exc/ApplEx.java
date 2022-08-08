@@ -8,6 +8,7 @@ public class ApplEx {
 		try {
 			i = 10 / i;
 		} catch (ArithmeticException e) {
+        //} catch (IllegalArgumentException e) {
 			System.out.println("Error: " + e.getMessage());
 		}
 		System.out.println("i = " + i);

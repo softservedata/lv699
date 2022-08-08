@@ -13,6 +13,7 @@ public class Appl {
 	public static int div() { // throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
+			//BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			System.out.print("n=");
 			int n = Integer.parseInt(br.readLine());
 			System.out.print("k=");
