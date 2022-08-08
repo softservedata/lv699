@@ -10,6 +10,7 @@ package com.softserve.HomeWork.hw06.task2;
 
 
 public class Employee {
+    public double levelSalary;
     private String name;
     private  int age;
     private double salary;
@@ -45,5 +46,9 @@ public class Employee {
     }
     public  String report(){
        return String.format(name, age, salary);
+    }
+
+    public double levelSalary(double i) {
+        return i;
     }
 }
