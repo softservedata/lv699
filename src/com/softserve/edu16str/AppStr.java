@@ -1,7 +1,7 @@
 package com.softserve.edu16str;
 
 public class AppStr {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		/*-
 		char[] chA = { 'A', 'B', 'C', 'D', 'E', 'F' };
 		System.out.println("array lenght = "+ chA.length);
@@ -9,6 +9,7 @@ public class AppStr {
 		System.out.println("strThird = " + strThird);
 		String strFourth = new String(chA, 2, 4); // CDEF
 		System.out.println("strFourth = " + strFourth);
+		System.out.println("strFourth lenght = "+ strFourth.length());
 		*/
 		/*-
 		String str = "I study Java Kava language abc";
@@ -28,9 +29,16 @@ public class AppStr {
 		System.out.println("new str1 = " + str1);
 		String str2 = str.substring(8, 13);
 		System.out.println("str2 = " + str2);
+		//
+		Boolean res = str.startsWith("I study"); //true
+		System.out.println("str.startsWith: I study = " + res);
+		res = str.startsWith("Java", 8);         //true
+		System.out.println("str.startsWith: Java = " + res);
+		res = str.endsWith("abc");
+		System.out.println("str.endsWith: abc = " + res);
 		*/
 		/*-
-		String str = "\t\t   Tabulated String  \t\n\n";
+		String str = "\t\t   Tabulated String  \t\n\r\n";
 		System.out.println(str);
 		str = str.trim();
 		System.out.println(str);
@@ -38,8 +46,9 @@ public class AppStr {
 		/*-
 		String str = "abracadabra abba";
 		System.out.println(str);
-		str = str.replace("a", "--");
-		// str = str.replaceAll("a\\b", "--"); // \b word boundary
+		//str = str.replace("a", "--");
+		//str = str.replaceAll("\\ba|a\\b", "--"); // \b word boundary
+		str = str.replaceAll("\\Ba\\B", "--");
 		//str = str.replaceFirst("a", "--");
 		//str = str.replaceFirst("b", "--");
 		System.out.println(str);
@@ -76,12 +85,14 @@ public class AppStr {
 		*/
 		/*-
 		final double PI = 3.1415926;
-		String formatStr = "%S is =%6.2f\n";
+		String formatStr = "%S is =%06.2f\n";
 		System.out.println("const PI = " + PI);
 		String s = String.format(formatStr, "pi", PI);
 		System.out.println(s);
 		System.out.printf(formatStr, "pi", PI);
-		System.out.printf("hashcode =%h", 64);
+		//System.out.printf("hashcode =%h", 64);
+		System.out.printf("\nhashcode =%h", 4096);
+		System.out.printf("\nhashcode =%H", 11259375L);
 		*/
 		// /*-
 		String s1 = new String("Hello");
@@ -90,6 +101,7 @@ public class AppStr {
 		// str = s1.concat(s2);
 		System.out.println("str = " + str);
 		//
+		//StringBuffer sbf = new StringBuffer("abc");
 		StringBuilder sb = new StringBuilder(s1);
 		sb.append(s2);
 		// str = sb.toString();

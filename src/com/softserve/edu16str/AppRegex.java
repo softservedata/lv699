@@ -10,9 +10,10 @@ import java.util.regex.Pattern;
 public class AppRegex {
 	public static void main(String[] args) {
 		//String pattern = "Now is the time";
-		//String pattern = "[ Na-z]+";
-		//String pattern = "[a-z]+";
+		//String pattern = "[ Na-z]+"; // 1,2,....infty
+		//String pattern = "[a-z]+"; // [abcdefghijklmnop...z\\-]
 		//String text = "Now is the time";
+		//String text = "";
 		//
 		//String pattern ="[bt]{2}";
 		//String pattern ="(\\w)\\1"; // Java String: \\ -> \
