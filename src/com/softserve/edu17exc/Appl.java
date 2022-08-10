@@ -57,6 +57,7 @@ public class Appl {
 				throw new Exception("hahaha");
 			}
 			return n / k;
+
 		} catch (NumberFormatException | IOException e) {
 			System.out.println("NumberFormatException | IOException");
 			return -1;
