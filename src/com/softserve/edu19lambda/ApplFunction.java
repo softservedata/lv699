@@ -3,6 +3,10 @@ package com.softserve.edu19lambda;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 class Person {
 	private String name;
@@ -24,8 +28,10 @@ public class ApplFunction {
 		List<String> names = Arrays.asList("Angela", "Aaron", "Bob", "Claire", "David", "A");
 		Predicate<String> predicate = name -> name.startsWith("A");
 		System.out.println("Origin: " + names);
+		//
 		List<String> namesWithA = names.stream()
 				//.filter(name -> name.startsWith("A"))
+				//.filter(name -> name.startsWith("A") && name.length() > 1)
 				.filter(predicate)
 				.filter(predicate1)
 				.collect(Collectors.toList());

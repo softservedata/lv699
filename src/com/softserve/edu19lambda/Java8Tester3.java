@@ -12,7 +12,7 @@ public class Java8Tester3 {
 		names.add("Naresh");
 		names.add("Kalpesh");
 		//
-		// System.out.println(names);
+		//System.out.println(names);
 //		for (int i = 0; i < names.size(); i++) {
 //			System.out.print(names.get(i) + "  ");
 //		}
