@@ -8,6 +8,7 @@ public class App {
         for (int i = 0; i < lineArrey.length; i++) {
             System.out.println(lineArrey[i]);
         }
+
         System.out.println(lineArrey[0]);
         System.out.println(lineArrey[1]);
         int n= 0;
