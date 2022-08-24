@@ -15,8 +15,7 @@ public abstract class Person extends FullName{
     }
 
     public String info(){
-        return String.format("First name: %s, Last name: %s, Age: %d",
-                             fullName.getFirstName(), fullName.getLastName(), getAge());
+        return String.format("First name: %s, Last name: %s, Age: %d", getFirstName(), getLastName(), getAge());
     }
 
     public abstract String activity();
