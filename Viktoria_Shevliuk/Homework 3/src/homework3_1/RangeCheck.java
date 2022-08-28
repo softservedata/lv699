@@ -17,8 +17,4 @@ public class RangeCheck {
         this.fl = fl;
     }
 
-
-
-
-
 }
