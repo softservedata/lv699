@@ -1,4 +1,4 @@
-package homework3_1;
+package homework3_1.RangeTask;
 
 public class RangeCheck {
 

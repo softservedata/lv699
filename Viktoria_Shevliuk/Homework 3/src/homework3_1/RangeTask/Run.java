@@ -1,10 +1,9 @@
-package homework3_1;
+package homework3_1.RangeTask;
 //read 3 float numbers and check: are they all belong to the range [-5,5];
-import pract_task_4.Product;
+import homework3_1.RangeTask.RangeCheck;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Run {
     public static void main(String[] args) {
@@ -29,4 +28,9 @@ public class Run {
              System.out.println("\n All the numbers belong to the needed range");
          } else System.out.println("\n Not all the numbers belong to the needed range");
         System.out.println("\n*************************************************************\n");
+        //////////////////////////////////////////////////////////////
+
+
+
+
 }}
