@@ -1,7 +1,7 @@
 package homework3_2;
 
 import pract_task_4.Product;
-import pract_task_4.QuantityComparator;
+
 
 import java.util.ArrayList;
 import java.util.List;
