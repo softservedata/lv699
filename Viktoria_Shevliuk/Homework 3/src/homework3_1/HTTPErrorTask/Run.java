@@ -6,7 +6,7 @@ public class Run {
         int error = 403;
         HTTPERR httpError = null;
         switch (error) {
-            case 1400:
+            case 400:
                 httpError = HTTPERR.BAD_REQUEST;
                 break;
             case 401:
@@ -20,7 +20,7 @@ public class Run {
                 break;
             default:
                 System.out.println("No such error");
-                System.exit(0);
+               break;
         }
         System.out.println(httpError);
 
