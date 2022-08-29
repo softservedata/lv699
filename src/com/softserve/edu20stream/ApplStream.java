@@ -1,13 +1,14 @@
 package com.softserve.edu20stream;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ApplStream {
 	public static void main(String[] args) {
-		String[] arr = new String[] {"abce", "", "bc", "abcd", "", "jkl"};
+		String[] arr = new String[] {"abce", "", "bc", "abcd", "", "jkl", "jkl"};
 		List<String> strings = Arrays.asList(arr);
 //		List<String> strings = Arrays.asList("abc", "", "bc", "abcd", "1", "jkl", "abcd", "ad*");
 		//
@@ -23,7 +24,7 @@ public class ApplStream {
 		System.out.println("Updated: " + filtered);
 		*/
 		//
-		/*-
+		// /*-
 		Stream<String> st = strings.stream()
 				.filter(string -> !string.isEmpty());
 		//
@@ -37,14 +38,14 @@ public class ApplStream {
 		// st = st.peek(x->System.out.println("++++"));
 		arr[1] = "0000";
 		st.forEach(System.out::println);
-		*/
-		// /*-
-		Stream<String> st = strings.stream()
+		// */
+		/*-
+		Stream<String> st2 = strings.stream()
 				.filter(string -> !string.isEmpty());
-		List<String> filtered = st.map(str->"_"+str+"_")
+		List<String> filtered = st2.map(str->"_"+str+"_")
 				.collect(Collectors.toList());
 		System.out.println("After: " + filtered);
-		// st.forEach(System.out::println); // Stream has already been operated upon or closed
-		// */
+		//st.forEach(System.out::println); // Stream has already been operated upon or closed
+		*/
 	}
 }

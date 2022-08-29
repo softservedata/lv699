@@ -1,17 +1,16 @@
 package com.softserve.edu20time;
 
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.text.SimpleDateFormat;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAdjusters;
 import java.util.Date;
 
 public class ApplTime {
 	public static void main(String[] args) {
 		/*-
-		long currentTime = System.currentTimeMillis();
+		long currentTime = System.currentTimeMillis(); // from 1.01.1970, 0:0:0.0  to 2038 ~ november
 		System.out.println("currentTime = " + currentTime);
 		//
 		Date date = new Date(currentTime);
@@ -136,10 +135,9 @@ public class ApplTime {
 		// Convert Date to LocalDateTime
 		LocalDateTime localDate = new Date(System.currentTimeMillis()).toInstant().atZone(ZoneId.systemDefault())
 				.toLocalDateTime();
-		// DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy 'at'
-		// hh:mm");
+		// DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy 'at' hh:mm");
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss.SSS dd.MM.yyyy");
 		System.out.println("localDate.format(formatter): " + localDate.format(formatter));
-		//*/
+		// */
 	}
 }

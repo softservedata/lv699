@@ -1,9 +1,7 @@
 package com.softserve.edu20stream;
 
-import java.util.Arrays;
-import java.util.IntSummaryStatistics;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class ApplStream2 {
 
@@ -63,6 +61,7 @@ public class ApplStream2 {
 		*/
 		/*-
 		List<String> parents = Arrays.asList("Petro", "Ivan", "Ira", "Adriy");
+		//List<String> parents = Arrays.asList("Petro");
 		//List<String> parents = Arrays.asList();
 		String res = parents.stream()
 		    .sorted()
