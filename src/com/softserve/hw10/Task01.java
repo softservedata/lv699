@@ -1,7 +1,6 @@
 package com.softserve.hw10;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.regex.*;
 
