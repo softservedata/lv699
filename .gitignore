@@ -131,5 +131,5 @@ workspace.xml
 /**/node_modules/
 
 # Ignore folders
-dev/
-homePractice/
+/dev/
+examples/
