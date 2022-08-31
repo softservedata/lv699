@@ -1,7 +1,5 @@
 package hw07.person;
 
-import com.sun.org.apache.xerces.internal.impl.xs.util.XSObjectListImpl;
-
 public class Teacher extends Staff {
     private final String TYPE_PERSONAL;
 
