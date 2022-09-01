@@ -1,4 +1,4 @@
-package com.softserve.hw09.homework1;
+package com.softserve.hw09.homework;
 
 import java.util.*;
 
