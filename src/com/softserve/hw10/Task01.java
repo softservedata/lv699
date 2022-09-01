@@ -23,10 +23,19 @@ public class Task01{
 
         String longestWord = "";
         String secondLongestWord = "";
+
+        //longest word loop
         for (String word : words){
-            if (word.length() > longestWord.length()){
-                secondLongestWord = longestWord;
+            if (word.length() > longestWord.length()) {
+                // secondLongestWord = longestWord;
                 longestWord = word;
+            }
+        }
+
+        //second-longest word loop
+        for (String word: words) {
+            if (!word.equals(longestWord) && (word.length() > secondLongestWord.length())) {
+                secondLongestWord = word;
             }
         }
 
