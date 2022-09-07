@@ -90,6 +90,5 @@ check if array is filled with strings from file1 and if the longestLine is found
             System.out.println("Unknown exception: ");
             e.printStackTrace();
         }
-
     }
 }
