@@ -52,12 +52,12 @@ public class ReadNumber {
         Arrays.sort(numbers);
 
 // printing the final variant as requested
-        String result = String.valueOf(rn.start) + " < ";
+        String result = rn.start + " < ";
         for (int number : numbers) {
-            result = result + String.valueOf(number) + " < ";
+            result = result + number + " < ";
         }
 
-        result = result + String.valueOf(rn.end);
+        result = result + rn.end;
         System.out.println("\nOutput of entered numbers in an increasing manner: \n\t" + result);
     }
 }
