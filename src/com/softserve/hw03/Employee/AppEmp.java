@@ -12,6 +12,6 @@ public class AppEmp {
         emp1.changeRate(200);
         System.out.println("Updated emp1 salary = " + emp1.getSalary());
         //
-        System.out.println("Total sum = " + Employee.getTotalSum());
+        System.out.println("Sum of all salaries = " + Employee.getTotalSum());
     }
 }
