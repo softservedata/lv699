@@ -22,8 +22,6 @@ public class Main {
         t3.start();
         t3.join();
 
-
-
         System.out.println("Main Thread DONE");
     }
 }
