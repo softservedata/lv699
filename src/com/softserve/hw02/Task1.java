@@ -9,9 +9,9 @@ public class Task1 {
         int radius = scn.nextInt();
 
         double perimeter = 2 * Math.PI * radius;
-        System.out.println("The perimeter of the flower bed is " + perimeter);
+        System.out.println("The perimeter of the flower bed: " + perimeter);
 
         double area = Math.PI * radius * radius;
-        System.out.println("The area of the flower bed is " + area);
+        System.out.println("The area of the flower bed: " + area);
     }
 }
