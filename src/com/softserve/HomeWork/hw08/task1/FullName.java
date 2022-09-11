@@ -20,11 +20,13 @@ public class FullName {
         return firstName;
     }
 
+
+
     public String getLastName() {
         return lastName;
     }
 
-   
+
 
     public void info() {
         System.out.println("First name:" + firstName + ", Last name:" + lastName);
