@@ -1,4 +1,4 @@
-package com.softserve.HomeWork.hw08.task2;
+package com.softserve.PracticalTask.task2;
 
 public class AppCarBuilder {
 	public static void main(String[] args) {
