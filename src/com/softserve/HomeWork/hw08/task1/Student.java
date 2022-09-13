@@ -11,7 +11,7 @@ public class Student extends Person {
     }
 
     @Override
-    public void info() {
+    void info() {
         System.out.println("First name: " + getFirstName() + ", Last name: " +
                 getLastName() + ", Age: " + getAge() + ", Course: " + numberCourse);
 
@@ -19,6 +19,7 @@ public class Student extends Person {
 
     @Override
     public String activity() {
+        System.out.println("I study at university");
         return "I Study at university";
     }
 }

@@ -2,6 +2,7 @@ package com.softserve.HomeWork.hw08.task1;
 
 public abstract class Person extends FullName {
     private FullName fullName;
+    private int age;
 
     public void setFullName(FullName fullName) {
         this.fullName = fullName;
@@ -11,7 +12,6 @@ public abstract class Person extends FullName {
         this.age = age;
     }
 
-    private int age;
 
     public FullName getFullName() {
         return fullName;
@@ -25,8 +25,9 @@ public abstract class Person extends FullName {
         super(firstName,lastName);
         this.age = age;
     }
-    public void info(){
-        System.out.println(", Age:" +age);
+    void info(){
+        System.out.println("First name: " + getFirstName() + ", Last name: " +
+                getLastName() + ", Age: " + getAge());
 
     }
     public abstract String activity();
