@@ -14,6 +14,19 @@ public class Home extends HttpServlet {
     //
     private String box = ""; // Architecture Error
 
+
+    public void init(ServletConfig config) throws ServletException {
+        // TODO Auto-generated method stub
+        super.init(config);
+        //
+        System.out.println("\t***public void init(ServletConfig config) done");
+    }
+
+    public void destroy() {
+        // TODO Auto-generated method stub
+        System.out.println("\t***public void destroy() done");
+    }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //
