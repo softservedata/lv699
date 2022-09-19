@@ -36,7 +36,7 @@ public class FilterDemo implements Filter {
     }
 
     public void destroy() {
-        System.out.println("***Filter DONE");
+        System.out.println("*** Filter DONE");
     }
 
 }
