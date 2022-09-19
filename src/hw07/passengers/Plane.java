@@ -6,6 +6,7 @@ public class Plane extends FlyingVehicle {
     @Override
     public void fly() {
         setMaxDistance(7700);
+
         System.out.printf("\nThe maximum range of a private jet is %s nautical miles\n", getMaxDistance());
     }
 
