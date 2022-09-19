@@ -37,7 +37,6 @@ hs_err_pid*
 *.[oa]
 
 # Single Module Project
-/.edu/
 /.externalToolBuilders/
 /.settings/
 /.metadata/
@@ -47,7 +46,7 @@ hs_err_pid*
 /bin/
 /build/
 /doc/
-/lib/
+#/lib/
 /test-output/
 /allure-results/
 /.classpath
@@ -64,7 +63,6 @@ workspace.xml
 *.ucls
 
 # Multi Modules Project
-/**/.edu/
 /**/.externalToolBuilders/
 /**/.settings/
 /**/.allure/
@@ -72,7 +70,7 @@ workspace.xml
 /**/doc/
 /**/bin/
 /**/build/
-/**/lib/
+#/**/lib/
 /**/test-output/
 /**/allure-results/
 /**/report/
@@ -131,5 +129,3 @@ workspace.xml
 # npm
 /node_modules/
 /**/node_modules/
-/**/dev
-/**/practise

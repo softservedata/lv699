@@ -1,0 +1,6 @@
+Name: Vitalii 
+Surname: Pavlyk
+City: Lviv
+Birthday date:  04.05.1997
+Now I work as an engineer at CNC
+I want to become a Java Developer

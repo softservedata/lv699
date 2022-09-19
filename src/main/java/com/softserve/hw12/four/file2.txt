@@ -1,0 +1,4 @@
+number of lines in file1.txt: 6
+This is the longest line: I want to become a Java Developer
+Name: Vitalii
+Birthday date: 04.05.1997
