@@ -1,7 +1,5 @@
 package hw07.passengers;
 
-import com.sun.xml.internal.ws.encoding.soap.SOAP12Constants;
-
 public class Bus extends GroundVehicle {
     private String route;
 

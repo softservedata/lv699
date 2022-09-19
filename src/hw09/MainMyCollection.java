@@ -1,7 +1,5 @@
 package hw09;
 
-import examples.generic.example.A;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Iterator;
