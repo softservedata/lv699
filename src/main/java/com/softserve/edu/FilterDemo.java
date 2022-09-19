@@ -31,7 +31,13 @@ public class FilterDemo implements Filter {
                     + "</body></html>");
             response.getWriter().close();
         } else {
+            System.out.println("*** Before chain.doFilter");
             chain.doFilter(request, response);
+            Object h = request.getAttribute("home");
+            if (h != null) {
+                System.out.println("home = " + h);
+            }
+            System.out.println("*** After chain.doFilter");
         }
     }
 

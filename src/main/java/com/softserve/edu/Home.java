@@ -41,6 +41,7 @@ public class Home extends HttpServlet {
         }
         //
         response.setContentType("text/html; charset=UTF-8");
+        request.setAttribute("home", "Home.java DONE");
         //response.setContentType("application/zip");
         PrintWriter out = response.getWriter();
         //
