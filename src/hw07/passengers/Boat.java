@@ -1,7 +1,5 @@
 package hw07.passengers;
 
-import javax.sound.midi.Soundbank;
-
 public class Boat extends WaterVehicle {
     private int volume;
 
