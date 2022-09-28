@@ -1,0 +1,5 @@
+Number of lines in file1: 6
+The longest line in the file1:
+	I decided to try myself in a new field, so I started learning JAVA at the SoftServe Academy.
+Name: Bogdan Viter
+Date Of Birth: 11 AUG 1992
