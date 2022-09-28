@@ -1,6 +1,0 @@
-Name: Bogdan Viter
-Date Of Birth: 11 AUG 1992
-Description of my career:
-In 2018 I  started practicing medicine on an outpatient care basis.
-I have worked as a doctor for 4 years, but I was always curious about IT. 
-I decided to try myself in a new field, so I started learning JAVA at the SoftServe Academy.
