@@ -9,7 +9,7 @@ public class Run {
         int [] numbers = {3, 0, -7, 4, -1, 10, 65, -3, 35, 1};
         int sum = 0;
         int product = 1;
-
+    //ghghghghghghghgh
         boolean positive = false;
         for(int i = 0; i<5; i++){
 
