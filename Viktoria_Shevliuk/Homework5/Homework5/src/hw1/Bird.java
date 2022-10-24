@@ -2,9 +2,9 @@ package hw1;
 
 public abstract class Bird {
 
-    private String feathers;
-    private boolean layEggs;
-    abstract void fly();
+    boolean feathers;
+    boolean layEggs;
+    abstract boolean fly();
 
     @Override
     public String toString(){
