@@ -23,4 +23,9 @@ public class SalariedEmployee  extends Employee implements Payment {
         avsalary = hourlyRate*hoursWorked;
     return avsalary;
     }
+
+    @Override
+    public int compareTo(Employee o) {
+        return 0;
+    }
 }

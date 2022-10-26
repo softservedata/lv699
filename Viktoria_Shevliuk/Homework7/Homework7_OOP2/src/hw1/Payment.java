@@ -19,5 +19,6 @@ package hw1;
 public interface Payment {
 
     public double calculatePay();
+    int compareTo(Employee o);
 
 }

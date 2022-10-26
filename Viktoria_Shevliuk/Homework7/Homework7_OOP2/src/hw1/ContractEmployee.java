@@ -21,4 +21,9 @@ public class ContractEmployee extends Employee implements Payment{
     public double calculatePay() {
     return salary;
     }
+
+    @Override
+    public int compareTo(Employee o) {
+        return 0;
+    }
 }

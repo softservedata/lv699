@@ -8,4 +8,9 @@ public class Employee {
         this.employeeId = employeeId;
         this.name = name;
     }
+
+    @Override
+    public double calculatePay() {
+        return 0;
+    }
 }
