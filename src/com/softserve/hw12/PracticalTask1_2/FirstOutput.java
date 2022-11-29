@@ -1,6 +1,4 @@
-package com.softserve.hw12;
-
-import com.softserve.hw09.PracticalTask1;
+package com.softserve.hw12.PracticalTask1_2;
 
 public class FirstOutput implements Runnable {
 

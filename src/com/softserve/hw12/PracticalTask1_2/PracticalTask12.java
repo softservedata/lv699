@@ -1,4 +1,6 @@
-package com.softserve.hw12;
+package com.softserve.hw12.PracticalTask1_2;
+
+import com.softserve.hw12.PracticalTask1_2.FirstOutput;
 
 public class PracticalTask12 {
 
@@ -33,6 +35,26 @@ public class PracticalTask12 {
         }
         System.out.println(" Main DONE, My name is Liuba");
 }
+
+    public static class SecondOutput implements Runnable {
+        @Override
+        public void run() {
+
+                boolean isWait = true;
+                for (int i = 0; i < 5; i++) {
+                    synchronized (monitor) {
+                        try {
+                            System.out.println("Peace in the Peace");
+                            isWait = false;
+                            Thread.sleep(3000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+
+                        }
+                    }
+                }
+        }
+    }
 
 }
 
