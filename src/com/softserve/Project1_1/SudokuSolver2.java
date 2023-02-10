@@ -1,10 +1,7 @@
 package com.softserve.Project1_1;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
+import java.io.*;
+
 
 public class SudokuSolver2 {
     private static final int SUDOKU_SIZE = 9;
@@ -113,6 +110,22 @@ public class SudokuSolver2 {
         SudokuSolver2 sudokuPrinter = new SudokuSolver2();
         sudokuPrinter.print(sudoku);
 
+
+        // Write array sudoku into file
+File myFile = new File ("C:/Liuba/Kurs OP/Java core/Home work/sudoku2.txt");
+try {
+    BufferedWriter writer = new BufferedWriter(new FileWriter(myFile, true));
+    String lineSeparator = System.getProperty("line.separator");
+    for (int i=0; i<9; i++) {
+        for (int k=0; k<9;k++){
+            writer.write(String.valueOf(sudoku[i][k]));
+    }
+        writer.write(lineSeparator);
+        }
+    writer.close();
+} catch (IOException e) {
+    e.printStackTrace();
+}
 
         if (sudokuSolver(sudoku)) {
             System.out.println("Solved successfully!");
